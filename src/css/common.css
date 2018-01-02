@@ -1,0 +1,208 @@
+.header-bar{
+    height: 36px;
+    background-color: #F1F1F1;
+    border-bottom:1px solid #ddd;
+}
+.header-bar ul li{float:left;}
+.site-header {
+    min-width: 1200px;
+    margin: 50px 0 30px 0;
+    height: 76px;
+    background: #fff;
+    -webkit-transition: margin-top .5s ease;
+    transition: margin-top .5s ease;
+}
+
+.site-header .container{
+    height: 76px;
+}
+.site-header .header-search{
+    margin-right:150px;
+    width:510px;
+    height: 40px;
+    border: solid 2px #163672;
+    border-radius: 2px;
+    background: #fff;
+    outline: 0;
+}
+.site-header .header-search input{
+    float: left;
+    width: 438px;
+    font-size: 14px;
+    margin: 10px;
+}
+.site-header .header-search .btnSearch{
+    float: left;
+    height: 38px;
+    width: 48px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #163672;
+}
+.header-car {
+    position: relative;
+    z-index: 1;
+}
+.header-car a.down {
+    display: block;
+    color: #666;
+    background: #ececec;
+    font-size: 16px;
+    height: 40px;
+    padding: 2px;
+    width: 120px;
+}
+.header-car a.down i {
+    float: left;
+    font-size: 22px;
+    line-height: 40px;
+    margin-right: 16px;
+    padding: 0 10px;
+    color: #333157;
+    background: #fff;
+}
+.header-car a.down em {
+    float: left;
+    padding-top: .5em;
+}
+.header-car a.down b.goods-count {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    display: block;
+    padding: 4px;
+    border-radius: 10px;
+    line-height: 8px;
+    color: #fff;
+    background-color: #ee4242;
+    font-size: 12px;
+    font-weight: normal;
+}
+.allGoodsType {
+    position: relative;
+    zoom: 1;
+    z-index: 10;
+    width: 160px;
+}
+.allGoodsType h3 {
+    display: block;
+    font-size: 14px;
+    line-height: 45px;
+    padding-left: 26px;
+    color: #fff;
+    background: #163672;
+    font-weight: 500;
+}
+.allGoodsType h3 .menu {
+   padding-right:5px;
+}
+.menu-nav {
+    zoom: 1;
+    height: 45px;
+}
+.menu-nav li {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.menu-nav li a {
+    display: block;
+    font-size: 14px;
+    line-height: 45px;
+    padding: 0 20px;
+}
+.menu-nav li a .sale{
+    width: 160px;
+    color: #fff;
+    background: red;
+    font-weight: bold;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    display: block;
+    height: 32px;
+    line-height: 32px;
+
+}
+.menu-nav li a em.discount {
+    position: absolute;
+    top: -14px;
+    right: 50%;
+    margin-left: -4.5px;
+    width: 9px;
+    height: 14px;
+    background: url(../img/sale.png) no-repeat center;
+    z-index: 2;
+}
+.menu-nav li a em.hot, .menu-nav li a em.new {
+    position: absolute;
+    top: -5px;
+    right: 32px;
+    width: 9px;
+    height: 14px;
+    background: url(../img/hot.gif) no-repeat center;
+    z-index: 2;
+}
+.menu-nav li a em.new {
+    background-image: url(../img/new.gif);
+}
+.menu-nav li .down{
+    position:relative;
+}
+.menu-nav li a .arrow_down{
+    display: block;
+    width: 10px;
+    height: 7px;
+    background: url('../img/arrow_down.png')no-repeat center;
+    position:absolute;
+    top:19px;
+    right:5px;
+}
+.menu-nav li .xs {
+    display: none;
+    background: #fff;
+    position: absolute;
+    top: 35px;
+    left: -1px;
+    width: 96px;
+    border: solid 1px #dfdfdf;
+    z-index: 3;
+}
+
+.main-footer{
+    color: #999;
+    background: #eee;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+    min-width: 1200px;
+    height: 217px;
+}
+.main-footer ul li{
+   padding-top:15px;
+   font-size:12px;
+   color:#999;
+}
+.main-footer .footerL ul .li1 a{
+   margin-right:20px;
+   font-size:14px;
+}
+.main-footer .footerC{
+   padding-left:60px;
+}
+.main-footer .footerC ul li p{
+   line-height:40px;
+}
+.main-footer .footerR{
+    position: relative;
+    z-index: 3;
+    width: 160px;
+    text-align: center;
+    color: #ddd;
+    background: #e65050;
+    padding: 30px 0 22px;
+}
+.main-footer .footerR img{
+    display: inline-block;
+    margin-bottom: 10px;
+    max-width: 114px;
+}
+    
