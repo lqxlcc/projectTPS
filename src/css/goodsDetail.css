@@ -1,0 +1,14 @@
+.main-content{
+
+}
+.main-content h3{
+    height: 36px;
+    line-height:36px;
+
+}
+.main-content .main-data{
+    width: 458px;
+    height: 458px;
+    border:1px solid #ccc;
+    
+}

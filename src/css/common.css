@@ -78,6 +78,10 @@
     font-size: 12px;
     font-weight: normal;
 }
+.header-nav {
+    height:45px;
+    border-bottom:2px solid #163672;
+}
 .allGoodsType {
     position: relative;
     zoom: 1;
@@ -205,4 +209,8 @@
     margin-bottom: 10px;
     max-width: 114px;
 }
-    
+.main-footer .footerR p{
+    color:white;
+    font-size:14px;
+    line-height:30px;
+}  

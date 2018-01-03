@@ -1,5 +1,5 @@
 
-.main-banner{position:relative;width:100%;height:450px;overflow:hidden;border-top:2px solid #163672;}
+.main-banner{position:relative;width:100%;height:450px;overflow:hidden;}
 .main-banner ul{position:absolute;overflow:hidden;}
 .main-banner ul li{float:left;}
 .main-banner  ul li img{display: block;height:450px;}
@@ -12,6 +12,7 @@
 ..........................................*/
 .main-content{
     height:14952px;
+    min-height:583px;
 }
 .main-content .main-new,.main-content .main-hot{
     height:880px;
@@ -144,7 +145,7 @@
     width: 290px;
     height: 157px;
     margin:40px 0;
-
+    position:relative;
  }
  .main-content .main-globalBuy ul li a{
     display: block;
@@ -152,6 +153,9 @@
     width: 157px;
     height: 157px;
     margin: 0 auto;
+    position:absolute;
+    top:0;
+    left:66px;
     
  }
 .main-content .main-globalBuy ul li:nth-child(2)>a{

@@ -125,12 +125,12 @@ document.addEventListener('DOMContentLoaded',function(){
 
             ulGoodsWire.innerHTML = data.map(item=>{
                 return `
-                    <li data-id="$">
+                    <li data-guid="${item.id}">
                         <p class="imgs"><img src="${item.img}"/></p>
                         <div class="decorationsAll">
                             <p class="decorations">${item.decorations}</p>
                             <p class="price">￥${item.price}</p>
-                            <p class="contry"><span>${item.made}</span><img src="${item.map}"/></p>
+                            <p class="contry"><span class="made">${item.made}</span><img src="${item.map}" class="map"/></p>
                         </div>
                         <img src="img/percent.png" class="imgPercent"/>
                         <img src="img/free.png" class="imgFree"/>
@@ -159,28 +159,94 @@ document.addEventListener('DOMContentLoaded',function(){
             // <!-- 汽车用品 -->
             goodsWireList[9].innerHTML = goodsWireList[8].innerHTML ;
             // 鼠标停在商品上时，商品描述高度升高
-            var lis = ulGoodsWire.children;
-            for(let i=0;i<lis.length;i++){
-                lis[i].onmouseenter = function(){
-                console.log(3);
-                    var div = document.querySelectorAll('.decorationsAll');
-                    div[i].style.top = 143 + 'px';
-                    div[i].style.backgroundColor = '#FFFFF2';
-                }
-                lis[i].onmouseleave = function(){
-                console.log(3);
-                    var div = document.querySelectorAll('.decorationsAll');
-                    div[i].style.top = 170 + 'px';
-                    div[i].style.backgroundColor = 'white';
+            for(let j=0;j<goodsWireList.length;j++){
+                var lis = goodsWireList[j].querySelectorAll('li');
+                for(let i=0;i<lis.length;i++){
+                    lis[i].onmouseenter = function(){
+                        var div = document.querySelectorAll('.decorationsAll');
+                        div[i].style.top = 143 + 'px';
+                        div[i].style.backgroundColor = '#FFFFF2';
+                    }
+                    lis[i].onmouseleave = function(){
+                        var div = document.querySelectorAll('.decorationsAll');
+                        div[i].style.top = 170 + 'px';
+                        div[i].style.backgroundColor = 'white';
+                    }
                 }
             }
+            /*
+                cookie传递数据
+             */
+            var carlist = [];
+            var cookies = document.cookie;
+            if(cookies.length){
+                cookies = cookies.split('; ');
+                cookies.forEach(function(item){
+                    var arr = item.split('=');
+                    if(arr[0] === 'carlist'){
+                        carlist = JSON.parse(arr[1]);
+                    }
+                });
+            }
+            document.onclick = function(e){
+                e = e||window.event;
+                var target = e.target||e.srcElement;
+                if(target.tagName.toLowerCase() ==='li'){
+                    var guid = target.getAttribute('data-guid');
+                    for(var i=0;i<carlist.length;i++){
+                        if(carlist[i].guid === guid){
+                            break;
+                        }
+                    }
+                    if(i === carlist.length){
+                        var goods = {
+                            guid:guid,
+                            imgurl:target.querySelector('img'),
+                            decorations:target.querySelector('.decorations'),
+                            price:target.querySelector('.price'),
+                            made:target.querySelector('.made'),
+                            map:target.querySelector('.map'),
+                            qty:1
+
+                        }
+                        carlist.push(goods);
+
+                    }
+                    else{
+                        carlist[i].qty++;
+                    }
+                    document.cookie = 'carlist='+JSON.stringify(carlist);
+
+                }
+               
+                var classname = ['li','p','del','img','h4','u','span'];
+                if(classname.indexOf(target.tagName.toLowerCase())){
+                    
+                    var params = '?';
+                    var _id = target.getAttribute('data-guid');
+                    console.log(_id);
+                    for(var j=0;j<carlist.length;j++){
+                        if(_id == carlist[j].id){
+                            for(var attr in carlist[j]){
+                                params += attr + '=' + encodeURI(carlist[j][attr]) + '&'
+                           console.log(params)
+                            }
+                        }
+                    }
+                     //删除多余的&
+                    params = params.slice(0,-1);
+                    // 跳转页面
+                    location.href = 'html/goodsdetail.html' + params;
+
+                }
+            }
+            
         }
     }
     xhr.open('get','http://localhost:368/project/src/api/index.php');
     xhr.send();
 
-
-
+    
     /*...............动态生成“热推”.............................................. */
     var hot_goods = document.querySelector('.hot-goods');
     var xhr1 = new XMLHttpRequest();
@@ -209,4 +275,22 @@ document.addEventListener('DOMContentLoaded',function(){
     }
     xhr1.open('get','http://localhost:368/project/src/api/hotBanner.php');
     xhr1.send();
+    // 全球购
+    var mainGlobalBuy = document.querySelector('.main-globalBuy');
+    var ulGlobalBuy = mainGlobalBuy.querySelector('ul');
+    var lisGlobalBuy = ulGlobalBuy.querySelectorAll('li');
+    for(let i=0;i<lisGlobalBuy.length;i++){
+        lisGlobalBuy[i].onmouseenter = function(){
+            var a = lisGlobalBuy[i].querySelector('a');
+            a.style.top = -20 + 'px';
+        }
+        lisGlobalBuy[i].onmouseleave = function(){
+            var a = lisGlobalBuy[i].querySelector('a');
+            a.style.top = 0;
+        }
+    }
+    /*
+        .......跳转到详情页...............
+     */
+    
 });

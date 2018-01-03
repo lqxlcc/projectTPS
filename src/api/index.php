@@ -10,15 +10,18 @@
     $img = array('img/new-banner1.jpg',
     'img/new-banner2.jpg','img/new-banner3.jpg',
     'img/new-banner4.jpg','img/new-banner5.jpg');
+    $details = array('img/goodsDetail1','img/goodsDetail2','img/goodsDetail3','img/goodsDetail4','img/goodsDetail5','img/goodsDetail6','img/goodsDetail7','img/goodsDetail8','img/goodsDetail9','img/goodsDetail10','img/goodsDetail11','img/goodsDetail12','img/goodsDetail13','img/goodsDetail14','img/goodsDetail15');
     $made = array('中国','日本','美国');
     $map = array('img/cn.jpg','img/jp.jpg','img/us.jpg');
     for($i=0;$i<15;$i++){
         $goods = array(
+            "id"=>"goods$i",
             "price"=>$price[array_rand($price)],
             "decorations"=>$decorations[array_rand($decorations)],
             "img"=>$img[array_rand($img)],
              "made"=>$made[array_rand($made)],
-            "map"=>$map[array_rand($map)]
+            "map"=>$map[array_rand($map)],
+            "details"=>$details
         );
         $list[] = $goods;
     }

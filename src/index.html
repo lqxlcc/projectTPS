@@ -9,112 +9,20 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="lib/jquery-3.2.1.min.js"></script>
+    <script>
+        $(function(){
+            $('.main-header').load('html/header.html',function(){
+                $('.home').attr('href','index.html');
+            });
+            $('.main-footer').load('html/footer.html');
+        });
+    </script>
 </head>
 
 <body>
     <div class="tps">
-        <div class="main-header">
-            <div class="header-bar">
-                <div class="container">
-                    <ul>
-                        <li>
-                            <i class="flag"></i>
-                            <span>中国</span>
-                            <i class="arrow"></i>
-                        </li>
-                        <li>
-                            <i></i>
-                            <span>人民币</span>
-                            <i class="arrow"></i>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="site-header">
-                <div class="container">
-                    <h1 class="fl"><img src="img/logo.png" alt=""><img src="img/logo2.png" alt=""></h1>
-                    <div class="fr">
-                        <div class="header-search fl">
-                            <input type="text">
-                            <button class="btnSearch"><img src="img/search.png" alt=""></button>
-                        </div>
-                        <div class="header-car fr">
-                            <a class="down" href="">
-                                <i>
-                                    <img src="img/buycar.png" alt="">
-                                </i>
-                                <em>购物车</em>
-                                <b class="goods-count">0</b>
-                            </a>
-                            <!-- <p class="no">购物袋中还没有商品，赶快选购吧！</p> -->
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="header-nav">
-                <div class="container">
-                    <div class="allGoodsType fl">
-                        <h3><i class="menu"><img src="img/menu.png" alt=""></i>全部商品分类</h3>
-                    </div>
-                    <ul class="menu-nav fl">
-                        <li>
-                            <a href="">商城首页</a>
-                        </li>
-                
-                        <li>
-                            <a href=""> <em class="hot"></em>口碑热卖</a>
-                        </li>
-                        <li>
-                            <a href="">特惠专区	</a>
-                        </li>
-                        <li>
-                            <a href="">精品套餐</a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span class="sale">年终最惠打折+双倍积分</span><em class="discount"></em>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="down" href="javascript:;">生活服务<i class="arrow_down"></i></a>
-                            <ol class="xs w120">
-                                <li><a href="">旅游</a></li>
-                                <li><a href="">餐饮</a></li>
-                                <li><a href="">酒店</a></li>
-                            </ol>
-
-                        </li>
-                        <li>
-                            <a class="down" href="javascript:;">全球购<i class="arrow_down"></i><em class="new"></em></a>
-                            <ol class="xs">
-                                <li><a href="">韩国馆</a></li>
-                                <li><a href="">俄罗斯馆</a></li>
-                                <li><a href="">港澳台馆</a></li>
-                                <li><a href="">加拿大馆</a></li>
-                                <li><a href="">日本馆</a></li>
-                                <li><a href="">欧洲馆</a></li>
-                                <li><a href="">澳洲馆</a></li>
-                                <li><a href="">东南亚馆</a></li>
-                            </ol>
-
-                        </li>
-                        <li>
-                            <a class="down" href="javascript:;">关于我们 <i class="arrow_down"></i><em class="new"></em></a>
-                            <ol class="xs w180">
-                                <li><a href="" id="glgcgx" target="_blank">公司官网</a></li>
-                                <li><a href="">物流配送</a></li>
-                                <li><a href="">售后服务</a></li>
-                                <li><a href="">帮助中心</a></li>
-                                <li><a href="">意见反馈</a></li>
-                            </ol>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-
-        </div>
+        <div class="main-header"></div>
         <div class="main-banner">
             <ul>
                 <li><img src="img/banner1.jpg"></li>
@@ -132,7 +40,7 @@
         </div>
         <div class="main-content">
             <div class="container">
-            <!-- 新品上架 -->
+                <!-- 新品上架 -->
                 <div class="main-new">
                     <h3>新品上架<i>/</i><i class="day">每天一点小期待</i><span class="fr">更多></span></h3>
                     <div class="new-goods">
@@ -968,41 +876,7 @@
                 </div>
             </div>
         </div>
-        <div class="main-footer">
-            <div class="container">
-                <div class="footerL fl">
-                    <ul>
-                        <li class="li1">
-                            <a href="">公司官网</a>   
-                            <a href="">物流配送 </a>
-                            <a href=""> 售后服务</a>       
-                            <a href="">帮助中心</a>
-                            <a href="">意见反馈</a>
-                        </li>
-                        <li class="li2"><a href=""><img src="img/geo.png"  /></a></li>
-                        <li class="li3">
-                            <p>食品经营许可证：JY14403040013964 &nbsp; &nbsp;&nbsp;增值电信业务经营许可证：<a href="https://mall.tps138.com/index/icp" target="_blank">粤B2-20160705</a>  </p>
-                            <p>第二类医疗器械经营备案凭证：<a href="/index/medical" target="_blank">粤深食药监械经营备20171931号</a></p>
-                            <p>Copyright &copy;2014-2018 TPS138.com 深圳前海云集品电子商务有限公司 版权所有.   <a href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备14072989号-2</a> </p>
-                            <p class="p_beian"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030402000508" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><i class="ico_beian"></i>粤公网安备 44030402000508号</a></p>
-                   
-                        </li>
-                    </ul>
-                </div>
-                <div class="footerC fl">
-                    <ul>
-                        <li>联系方式</li>
-                        <li>
-                            <p>123243543564</p>
-                            <p>广东省深圳市福田区泰然工贸园泰然四路204栋东座4楼</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footerR fr">
-                    <img src="img/weixin.jpg" />
-                </div>
-            </div>
-        </div>
+        <div class="main-footer"></div>
     </div>
 </body>
 <script src="js/common.js"></script>
