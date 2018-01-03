@@ -3,7 +3,68 @@
     background-color: #F1F1F1;
     border-bottom:1px solid #ddd;
 }
-.header-bar ul li{float:left;}
+.header-bar .nav-top{
+    position: relative;
+
+}
+.header-bar .nav-top li:hover a{
+    background: white;
+}
+.header-bar .nav-top .w90:hover .xs{
+    display:block;
+}
+.header-bar .nav-top .mfr-5:hover .xs{
+    display:block;
+}
+.header-bar .nav-top .w92:hover .xs{
+    display:block;
+}
+.header-bar .nav-top li{
+    position: relative;
+    line-height: 36px;
+    z-index: 10;
+    font-size:12px;
+    margin-right:20px;
+}
+.header-bar .nav-top li .j-appDownload{
+    padding-left:5px;
+}
+.header-bar .nav-top li .down{
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+}
+.header-bar .nav-top li .down s{
+    margin-right: 6px;
+}
+
+.header-bar .nav-top li .down s.minicart_arrow{
+    position: relative;
+    left: 4px;
+    top: 10px;
+    height: 0;
+    border-width: 4px;
+    border-color: #888 transparent transparent;
+    border-style: solid dashed dashed;
+}
+.header-bar .nav-top li .xs{
+    display: none;
+    background: #fff;
+    position: absolute;
+    top: 35px;
+    left: -1px;
+    width: 96px;
+    border: solid 1px #dfdfdf;
+    z-index: 3;
+}
+.header-bar .nav-top li a .cflag{
+    width: 16px;
+    height: 11px;
+    margin-right:5px;
+}
+.header-bar .nav-top li a.c-o{
+    color:red;
+}
 .site-header {
     min-width: 1200px;
     margin: 50px 0 30px 0;
@@ -104,6 +165,9 @@
     zoom: 1;
     height: 45px;
 }
+.menu-nav li:hover .xs{
+    display:block;
+}
 .menu-nav li {
     position: relative;
     display: inline-block;
@@ -113,7 +177,7 @@
     display: block;
     font-size: 14px;
     line-height: 45px;
-    padding: 0 20px;
+    padding: 0 29px;
 }
 .menu-nav li a .sale{
     width: 160px;
@@ -171,11 +235,19 @@
     border: solid 1px #dfdfdf;
     z-index: 3;
 }
-
+.menu-nav li .xs a{
+    font-size:12px;
+}
+.menu-nav li .w120 {
+    width: 120px;
+}
+.menu-nav li .w180 {
+    width: 180px;
+}
 .main-footer{
     color: #999;
     background: #eee;
-    margin-top: 40px;
+    /*margin-top: 40px;*/
     border-top: 1px solid #ddd;
     min-width: 1200px;
     height: 217px;

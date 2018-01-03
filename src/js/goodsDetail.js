@@ -13,7 +13,8 @@
     var p3=document.getElementById("p3");
     var p4=document.getElementById("p4");
     var productid = paramsUrl.id;
-    listImg.src = paramsUrl.imgurl;
+    listImg.src = '../'+paramsUrl.imgurl;
+    console.log(paramsUrl.imgurl)
     p1.innerHTML=paramsUrl.decorations;
     p2.innerHTML='￥'+paramsUrl.price;
     p3.innerHTML=paramsUrl.made;

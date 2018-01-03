@@ -1,0 +1,68 @@
+.main-content{
+    height: 600px;
+    background: url('../img/reg_bg.gif') center;
+}
+.main-content .registerTab{
+    width: 380px;
+    height: 409px;
+    background: white;
+    margin-top:50px;
+    padding:31px 35px;
+}
+.main-content .registerTab ul li h3{
+    margin-right:30px;
+    margin-bottom:10px;
+    width: 72px;
+    height: 45px;
+    line-height:45px;
+    border-bottom:2px solid #ed4242;
+    font-size:18px;
+    color:#CACAD9;;
+    font-weight:bold;
+
+}
+.main-content .registerTab ul li h3.phone{
+    border-bottom:none;
+}
+.main-content .registerTab ul li h3:nth-child(2){
+   
+    width: 108px;
+    height: 45px;
+}
+.main-content .registerTab ul li input{
+    padding-left: 30px;
+    width: 300px;
+    height: 40px;
+    outline: 0;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    color: #999;
+    font-size: 14px;
+    margin:10px 0;
+}
+.main-content .registerTab ul .checkA input{
+    width: 16px;
+    height: 25px;
+}
+.main-content .registerTab ul .checkA,.main-content .registerTab ul li:last-child{
+    font-size:12px;
+}
+.main-content .registerTab ul li a{
+    color:blue;
+}
+.main-content .registerTab ul li .agreen{
+    display: block;
+    width: 314px;
+    height: 45px;
+    border: 0;
+    border-radius: 6px;
+    background: #ed4242;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 45px;
+    cursor: pointer;
+}
+.main-content .registerTab ul li:last-child{
+    padding-top:10px;
+}
