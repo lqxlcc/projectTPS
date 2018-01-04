@@ -77,8 +77,13 @@
 .site-header .container{
     height: 76px;
 }
-.site-header .header-search{
+.site-header .w510{
+    height: 68px;
+    width:510px;
     margin-right:150px;
+}
+.site-header .w510 .header-search{
+    
     width:510px;
     height: 40px;
     border: solid 2px #163672;
@@ -86,13 +91,13 @@
     background: #fff;
     outline: 0;
 }
-.site-header .header-search input{
+.site-header .w510 .header-search input{
     float: left;
     width: 438px;
     font-size: 14px;
     margin: 10px;
 }
-.site-header .header-search .btnSearch{
+.site-header .w510 .header-search .btnSearch{
     float: left;
     height: 38px;
     width: 48px;
@@ -100,11 +105,27 @@
     overflow: hidden;
     background-color: #163672;
 }
-.header-car {
+.site-header .w510 .search-hots{
+    margin-top: 4px;
+    height: 20px;
+}
+.site-header .w510 .search-hots b{
+    margin-right: 6px;
+    display: inline-block;
+    font-weight: normal;
+}
+.site-header .w510 .search-hots a.c-o{
+    color: #ee4242;
+}
+.site-header .w510 .search-hots a.c-66{
+    font-size:12px;
+    
+}
+.site-header .header-car {
     position: relative;
     z-index: 1;
 }
-.header-car a.down {
+.site-header .header-car a.down {
     display: block;
     color: #666;
     background: #ececec;
@@ -113,7 +134,7 @@
     padding: 2px;
     width: 120px;
 }
-.header-car a.down i {
+.site-header .header-car a.down i {
     float: left;
     font-size: 22px;
     line-height: 40px;
@@ -122,11 +143,11 @@
     color: #333157;
     background: #fff;
 }
-.header-car a.down em {
+.site-header .header-car a.down em {
     float: left;
     padding-top: .5em;
 }
-.header-car a.down b.goods-count {
+.site-header .header-car a.down b.goods-count {
     position: absolute;
     top: -10px;
     left: 15px;
@@ -231,7 +252,7 @@
     position: absolute;
     top: 35px;
     left: -1px;
-    width: 96px;
+    width: 108px;
     border: solid 1px #dfdfdf;
     z-index: 3;
 }

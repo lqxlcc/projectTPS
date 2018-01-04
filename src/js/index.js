@@ -14,106 +14,23 @@ document.addEventListener('DOMContentLoaded',function(){
     let ul = focus.querySelector('ul');
     let img = ul.querySelectorAll('img');
     let imgWidth = focus.clientWidth;
-    for(let i=0;i<img.length;i++){
-       img[i].style.width = imgWidth + 'px';
-   
-    }
-     // 把第一张复制到最后
-    ul.appendChild(ul.children[0].cloneNode(true));
-    let len = ul.children.length;//10
-
-     // 索引值
-     let index = 0;
-
+    carousels({
+        focus:document.querySelector('.main-banner'),
+        ul:focus.querySelector('ul'),
+        img:ul.querySelectorAll('img'),
+        imgWidth:focus.clientWidth});
      
-     // 1）设置ul宽度，达到水平排列的效果
-     ul.style.width = imgWidth*len + 'px';
-
-
-     // 生成页码
-     let page = document.createElement('div');
-     page.classList.add('page');
-     for(let i=1;i<len;i++){
-         let span = document.createElement('span');
-         span.innerText = i;
-         if(i===1){
-             span.classList.add('active');
-         }
-         page.appendChild(span);
-     }
-     focus.appendChild(page);
-
-    // 2）水平轮播效果
-    /*
-        index		left
-        0			0
-        1			-810
-        2			-1620
-        3			-2430
-
-        推导公式：left = index*width
-     */
-    let timer = setInterval(autoPlay,3000);
-
-
-    // 鼠标移入移出
-    focus.onmouseenter = ()=>{
-        console.log(3);
-        clearInterval(timer);
-        page.style.display = 'block';
-    }
-
-    focus.onmouseleave = ()=>{
-        timer = setInterval(autoPlay,3000);
-        page.style.display = 'none';
-    }
-
-    focus.onclick = e=>{
-        if(e.target.parentNode.className === 'page'){
-            // 把index改成当前页码对应的索引值
-            index = e.target.innerText-1;
-
-            show();
-        }
-    }
-
-    function autoPlay(){
-        index++;
-
-        show();
-    }
-
-    function show(){
-        if(index>=len){//0,1,2,3,4
-            ul.style.left = 0;
-            index = 1;
-        }
-        animate(ul,{left:-index*imgWidth});
-
-        // 页码高亮
-        // 先清除所有高亮
-        for(var i=0;i<len-1;i++){
-            page.children[i].className = '';
-        }
-
-        if(index==len-1){
-            page.children[0].classList.add('active')
-        }else{
-            page.children[index].classList.add('active');
-        }
-    }
 /*...............动态生成“新品”.............................................. */
     var new_goods = document.querySelector('.new-goods');
     var goodsWireList = document.querySelectorAll('.goodsWireList');
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function(){
-        if(xhr.readyState === 4 &&(xhr.status ===200||xhr.status === 304)){
-            var data = JSON.parse(xhr.responseText);
+    ajax.get({
+        url:'http://localhost:368/project/src/api/index.php',
+        success(res){
             var ul = document.createElement('ul');
             var ulGoodsWire = document.createElement('ul');
-            ul.innerHTML = data.map(item=>{
+            ul.innerHTML = res.map(item=>{
                 return `
-                    <li data-id="$">
+                    <li data-id="${item.id}">
                         <p class="imgs"><img src="${item.img}"/></p>
                         <div class="decorations">${item.decorations}
                             <p class="price">￥${item.price}</p>
@@ -121,16 +38,19 @@ document.addEventListener('DOMContentLoaded',function(){
                     </li>
                 `;
             }).join('');
-            new_goods.appendChild(ul);
+            for(var i=0;i<new_goods.querySelectorAll('ul').length;i++){
+               new_goods.querySelectorAll('ul')[i].innerHTML = ul.innerHTML;
 
-            ulGoodsWire.innerHTML = data.map(item=>{
+            }
+            ulGoodsWire.innerHTML = res.map(item=>{
+
                 return `
                     <li data-guid="${item.id}">
                         <p class="imgs"><img src="${item.img}"/></p>
                         <div class="decorationsAll">
                             <p class="decorations">${item.decorations}</p>
                             <p class="price">￥${item.price}</p>
-                            <p class="contry"><span class="made">${item.made}</span><img src="${item.map}" class="map"/></p>
+                            <p class="contry"><i class="made">${item.made}</i><img src="${item.map}" class="map"/></p>
                         </div>
                         <img src="img/percent.png" class="imgPercent"/>
                         <img src="img/free.png" class="imgFree"/>
@@ -138,27 +58,12 @@ document.addEventListener('DOMContentLoaded',function(){
                     </li>
                 `;
             }).join('');
-            // <!-- 食品酒水 -->
-            goodsWireList[0].appendChild(ulGoodsWire);
-            // <!-- 美妆个护 -->
-            goodsWireList[1].innerHTML = goodsWireList[0].innerHTML ;
-            // <!-- 家具日用 -->
-            goodsWireList[2].innerHTML = goodsWireList[1].innerHTML ;
-            // <!-- 服饰鞋帽 -->
-            goodsWireList[3].innerHTML = goodsWireList[2].innerHTML ;
-            // <!-- 营养保健 -->
-            goodsWireList[4].innerHTML = goodsWireList[3].innerHTML ;
-            // <!-- 钟表首饰 -->
-            goodsWireList[5].innerHTML = goodsWireList[4].innerHTML ;
-            // <!-- 母婴用品 -->
-            goodsWireList[6].innerHTML = goodsWireList[5].innerHTML ;
-            // <!-- 礼品箱包 -->
-            goodsWireList[7].innerHTML = goodsWireList[6].innerHTML ;
-            // <!-- 数码电子 -->
-            goodsWireList[8].innerHTML = goodsWireList[7].innerHTML ;
-            // <!-- 汽车用品 -->
-            goodsWireList[9].innerHTML = goodsWireList[8].innerHTML ;
-            // 鼠标停在商品上时，商品描述高度升高
+            for(var i=0;i<goodsWireList.length;i++){
+               goodsWireList[i].querySelector('ul').innerHTML = ulGoodsWire.innerHTML;
+
+            }
+                drumpDetail(res);
+             // 鼠标停在商品上时，商品描述高度升高
             for(let j=0;j<goodsWireList.length;j++){
                 var lis = goodsWireList[j].querySelectorAll('li');
                 for(let i=0;i<lis.length;i++){
@@ -174,89 +79,20 @@ document.addEventListener('DOMContentLoaded',function(){
                     }
                 }
             }
-            /*
-                cookie传递数据
-             */
-            var carlist = [];
-            var cookies = document.cookie;
-            if(cookies.length){
-                cookies = cookies.split('; ');
-                cookies.forEach(function(item){
-                    var arr = item.split('=');
-                    if(arr[0] === 'carlist'){
-                        carlist = JSON.parse(arr[1]);
-                    }
-                });
-            }
-            document.onclick = function(e){
-                e = e||window.event;
-                var target = e.target||e.srcElement;
-                if(target.tagName.toLowerCase() ==='li'){
-                    var guid = target.getAttribute('data-guid');
-                    for(var i=0;i<carlist.length;i++){
-                        if(carlist[i].guid === guid){
-                            break;
-                        }
-                    }
-                    if(i === carlist.length){
-                        var goods = {
-                            guid:guid,
-                            imgurl:target.querySelector('img'),
-                            decorations:target.querySelector('.decorations'),
-                            price:target.querySelector('.price'),
-                            made:target.querySelector('.made'),
-                            map:target.querySelector('.map'),
-                            qty:1
-
-                        }
-                        carlist.push(goods);
-
-                    }
-                    else{
-                        carlist[i].qty++;
-                    }
-                    document.cookie = 'carlist='+JSON.stringify(carlist);
-
-                }
-               
-                var classname = ['li','p','del','img','h4','u','span'];
-                if(classname.indexOf(target.tagName.toLowerCase())){
-                    
-                    var params = '?';
-                    var _id = target.getAttribute('data-guid');
-                    console.log(_id);
-                    for(var j=0;j<carlist.length;j++){
-                        if(_id == carlist[j].id){
-                            for(var attr in carlist[j]){
-                                params += attr + '=' + encodeURI(carlist[j][attr]) + '&'
-                           console.log(params)
-                            }
-                        }
-                    }
-                     //删除多余的&
-                    params = params.slice(0,-1);
-                    // 跳转页面
-                    location.href = 'html/goodsdetail.html' + params;
-
-                }
-            }
-            
+                
         }
-    }
-    xhr.open('get','http://localhost:368/project/src/api/index.php');
-    xhr.send();
+    });
 
-    
     /*...............动态生成“热推”.............................................. */
     var hot_goods = document.querySelector('.hot-goods');
     var xhr1 = new XMLHttpRequest();
-    xhr1.onreadystatechange = function(){
-        if(xhr1.readyState === 4 &&(xhr1.status ===200||xhr1.status === 304)){
-            var dataOne = JSON.parse(xhr1.responseText);
+    ajax.get({
+        url:'http://localhost:368/project/src/api/hotBanner.php',
+        success(res){
             var ul = document.createElement('ul');
-            ul.innerHTML = dataOne.map(item=>{
+            ul.innerHTML = res.map(item=>{
                 return `
-                    <li data-id="$">
+                    <li data-id="${item.id}">
                         <img src="img/hot.png" class="imgHot"/>
                         <img src="img/free.png" class="imgFree"/>
                         <img src="img/bao.png" class="imgBao"/>
@@ -270,11 +106,10 @@ document.addEventListener('DOMContentLoaded',function(){
                 `;
             }).join('');
            hot_goods.appendChild(ul);
-            
+           drumpDetail(res);
         }
-    }
-    xhr1.open('get','http://localhost:368/project/src/api/hotBanner.php');
-    xhr1.send();
+    })
+    
     // 全球购
     var mainGlobalBuy = document.querySelector('.main-globalBuy');
     var ulGlobalBuy = mainGlobalBuy.querySelector('ul');
@@ -289,8 +124,39 @@ document.addEventListener('DOMContentLoaded',function(){
             a.style.top = 0;
         }
     }
-    /*
+   /*
         .......跳转到详情页...............
      */
     
+    function drumpDetail(res){
+
+        for(var z=0;z<goodsWireList.length;z++){
+            var goodsDetailUl = goodsWireList[z].querySelector('ul');
+                for(var i=0;i<goodsDetailUl.children.length;i++){
+                    goodsDetailUl.children[i].onclick = function(e){
+                        var tagname = ['li','img','i','p'];
+                        if(tagname.indexOf(e.target.tagName.toLowerCase())){
+                            
+                            var params = '?';
+                            var _id = this.getAttribute('data-guid');
+                            for(var j=0;j<res.length;j++){
+                            
+
+                                if(_id == res[j].id){
+                                    for(var attr in res[j]){
+                                        params += attr + '=' + encodeURI(res[j][attr]) + '&';
+                                    }
+                                }
+                            }
+                            // console.log(params);
+                             //删除多余的&
+                            params = params.slice(0,-1);
+                            // 跳转页面
+                            location.href = 'html/goodsDetail.html' + params;
+                        }
+                    }
+                }
+        }
+        
+    }
 });

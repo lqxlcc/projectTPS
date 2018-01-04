@@ -9,16 +9,17 @@
     });
     var listImg = document.getElementById('listImg');
     var p1=document.getElementById("p1");
-    var p2=document.getElementById("p2");
+    var goodsprice=document.getElementById("price");
     var p3=document.getElementById("p3");
-    var p4=document.getElementById("p4");
+    // var p4=document.getElementById("p4");
+    var goodsId=document.getElementById("goodsId");
     var productid = paramsUrl.id;
-    listImg.src = '../'+paramsUrl.imgurl;
-    console.log(paramsUrl.imgurl)
+    listImg.src = '../'+paramsUrl.img;
     p1.innerHTML=paramsUrl.decorations;
-    p2.innerHTML='￥'+paramsUrl.price;
-    p3.innerHTML=paramsUrl.made;
-    p4.innerHTML=paramsUrl.map;
+    goodsprice.innerHTML='￥'+paramsUrl.price;
+    p3.innerHTML= '原产地：'+paramsUrl.made;
+    // p4.src= '../'+paramsUrl.map;
+    goodsId.innerHTML = '商品编码：'+productid;
     // var carlist = [];
     // var buyBtn = document.getElementById('buyBtn');
     // var cookies = document.cookie;

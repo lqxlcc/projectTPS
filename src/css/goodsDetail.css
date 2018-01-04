@@ -1,4 +1,9 @@
 .main-content{
+    height: 8000px;
+}
+.main-content .mainT{
+    height: 550px;
+    margin-bottom:30px;
 
 }
 .main-content h3{
@@ -6,9 +11,137 @@
     line-height:36px;
 
 }
+.main-content .main-dataL .main-dataF{
+    height: 60px;
+    overflow-y: hidden;
+    text-align:center;
+    margin-top:10px;
+}
+.main-content .main-dataL .main-dataF li{
+    height: 60px;
+    width: 60px;
+    margin-right:10px;
+    border: 2px solid #ed4242;
+    float:left;
+}
 .main-content .main-data{
     width: 458px;
     height: 458px;
     border:1px solid #ccc;
     
+}
+.main-content .main-data #listImg{
+    width: 456px;
+    height: 456px;
+    
+}
+.main-content .main-dataR{
+    width: 660px;
+    height: 379px;
+    
+}
+.main-content .main-dataR #p1{
+    font-size:18px;
+    font-weight:bold;
+    height:30px;
+    line-height:30px;
+    margin-top:5px;
+
+    
+}
+.main-content .main-dataR span{
+    padding: 3px 10px;
+    border-radius: 3px;
+    color: #fff;
+    background: #ed4242;
+    font-size:12px;
+
+}
+.main-content .main-dataR p.address{
+    height: 30px;
+    color: #ed4242;
+    font-size:12px;
+
+}
+.main-content .main-dataR #goodsId{
+    margin-right:40px;
+}
+.main-content .main-dataR #goodsId{
+    margin-right:40px;
+}
+.main-content .main-dataR .priceD{
+    height: 36px;
+    line-height:36px;
+    margin:20px 0;
+}
+.main-content .main-dataR .priceD .price{
+    display:inline-block;
+    background: none;
+    font-size:12px;
+    margin-right:20px;
+    color:black;
+    
+}
+.main-content .main-dataR .priceD #price{
+    background: none;
+    font-size: 24px;
+    color: #ed4242;
+    
+}
+.main-content .main-dataR .priceD .qty{
+    color: #666;
+    font-size: 12px;
+    padding: 3px 2px 0 10px;
+    height: 26px;
+    border: 1px solid #a7a6ac;
+    width: 50px;
+    line-height: 26px;
+}
+.main-content .main-dataR .priceD .cqty{
+    margin-left:30px;
+}
+.main-content .mainF{
+    text-align:center;
+
+}
+.main-content .mainF h2{
+    width: 250px;
+    height: 50px;
+    text-align:right;
+    font-size:18px;
+}
+.main-content .mainF .h50{
+    height: 50px;
+}
+.main-content .mainF .introduce{
+    width: 500px;
+    color:#ed4242;
+}
+.main-content .mainF .introduceA{
+    height: 7000px;
+    border-top:2px solid #ed4242;
+}
+.main-content .mainF .introduceA .introduceAl{
+    width: 170px;
+    height: 7000px;
+    background: pink;
+}
+.main-content .mainF .introduceA .introduceAl h3,.main-content .mainF .introduceA .introduceAr h3{
+    color: #333;
+    background: #fff;
+    margin: 0 10px 2px;
+    font-size: 14px;
+    font-weight:bold;
+    line-height: 3;
+    border-bottom: 1px solid #ddd;
+}
+.main-content .mainF .introduceA .introduceAc{
+    width:800px;
+    height: 7000px;
+    background: red;
+}
+.main-content .mainF .introduceA .introduceAr{
+    width: 190px;
+    height: 7000px;
+    background: green;
 }

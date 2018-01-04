@@ -14,6 +14,7 @@
     $map = array('img/cn.jpg','img/jp.jpg','img/us.jpg');
     for($i=0;$i<12;$i++){
         $goods = array(
+            "id"=>"goods$i",
             "price"=>$price[array_rand($price)],
             "decorations"=>$decorations[array_rand($decorations)],
             "img"=>$img[array_rand($img)],
