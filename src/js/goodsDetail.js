@@ -59,4 +59,5 @@
     //     document.cookie = 'cartlist=' + JSON.stringify(cartlist) + '; expires='+now.toUTCString();
     //     }
     // }
+    
 })();

@@ -406,6 +406,7 @@ function ajax(options){
 	}
 
 	
+	xhr.open(opt.type,opt.url,true);
 
 	if(opt.type === 'get'){
 		opt.url += opt.url.indexOf('?')>=0 ? params : '?'+params;
@@ -415,7 +416,6 @@ function ajax(options){
 		xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
 	}
 
-	xhr.open(opt.type,opt.url);
 	xhr.send(params);
 }
 
@@ -444,8 +444,8 @@ ajax.jsonp = function(options){
 // ajax.get()
 function carousels(options){
 	for(let i=0;i<options.img.length;i++){
-       options.img[i].style.width = options.imgWidth + 'px';
-   
+		options.img[i].style.width = options.imgWidth + 'px';
+
     }
      // 把第一张复制到最后
     options.ul.appendChild(options.ul.children[0].cloneNode(true));
@@ -461,7 +461,16 @@ function carousels(options){
 
      // 生成页码
      let page = document.createElement('div');
+     let arrow = document.createElement('div');
      page.classList.add('page');
+     arrow.classList.add('arrow');
+    for(let j=0;j<2;j++){
+        let span = document.createElement('span');
+        arrow.appendChild(span);
+    }
+    options.focus.appendChild(arrow);
+    arrow.children[0].innerText = '<';
+    arrow.children[1].innerText = '>';
      for(let i=1;i<len;i++){
          let span = document.createElement('span');
          span.innerText = i;
@@ -490,11 +499,13 @@ function carousels(options){
         console.log(3);
         clearInterval(timer);
         page.style.display = 'block';
+        arrow.style.display = 'block';
     }
 
     options.focus.onmouseleave = ()=>{
         timer = setInterval(autoPlay,3000);
         page.style.display = 'none';
+        arrow.style.display = 'none';
     }
 
     options.focus.onclick = e=>{
@@ -505,7 +516,24 @@ function carousels(options){
             show();
         }
     }
-
+    arrow.children[0].onclick =()=>{
+        if(index!=0){
+            index--;
+        }else{
+            index = 9;
+        }
+        
+        show();
+    }
+    arrow.children[1].onclick =()=>{
+        if(index!=9){
+            index++;
+        }else{
+            index = 0;
+        }
+        
+        show();
+    }
     function autoPlay(){
         index++;
 

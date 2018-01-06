@@ -2,34 +2,25 @@
     height: 600px;
     background: url('../img/reg_bg.gif') center;
 }
-.main-content .registerTab{
+.main-content .loginTab{
     width: 380px;
     height: 409px;
     background: white;
     margin-top:50px;
     padding:31px 35px;
 }
-.main-content .registerTab ul li h3{
-    margin-right:30px;
-    margin-bottom:10px;
-    width: 72px;
+.main-content .loginTab ul li h3{
+    
     height: 45px;
     line-height:45px;
-    border-bottom:2px solid #ed4242;
     font-size:18px;
     color:#CACAD9;;
     font-weight:bold;
+    text-align:center;
 
 }
-.main-content .registerTab ul li h3.phone{
-    border-bottom:none;
-}
-.main-content .registerTab ul li h3:nth-child(2){
-   
-    width: 108px;
-    height: 45px;
-}
-.main-content .registerTab ul li input{
+
+.main-content .loginTab ul li input{
     padding-left: 30px;
     width: 300px;
     height: 40px;
@@ -40,17 +31,17 @@
     font-size: 14px;
     margin-top:10px;
 }
-.main-content .registerTab ul .checkA input{
+.main-content .loginTab ul .checkA input{
     width: 16px;
     height: 25px;
 }
-.main-content .registerTab ul .checkA,.main-content .registerTab ul li:last-child{
+.main-content .loginTab ul .checkA,.main-content .loginTab ul li:last-child{
     font-size:12px;
 }
-.main-content .registerTab ul li a{
+.main-content .login ul li a{
     color:blue;
 }
-.main-content .registerTab ul li .agreen{
+.main-content .loginTab ul li .agreen{
     display: block;
     width: 314px;
     height: 45px;
@@ -63,11 +54,25 @@
     line-height: 45px;
     cursor: pointer;
 }
-.main-content .registerTab ul li:last-child{
+.main-content .loginTab ul li:last-child{
     padding-top:10px;
 }
-.main-content .registerTab ul li .alert{
+.main-content .loginTab ul li .alert{
     font-size:12px;
     color:#ed4242;
     height: 20px;
+}
+
+.main-content .loginTab ul li .verifi,.main-content .loginTab ul li .verifiRandom{
+    display:inline-block;
+    width: 140px;
+    height: 40px;
+    margin-right:10px;
+    border: 1px solid #e5e5e5;
+    vertical-align:bottom;
+    border-radius: 6px;
+    margin-bottom:10px;
+}
+.main-content .loginTab ul li .verifiRandom{
+    height: 38px;
 }

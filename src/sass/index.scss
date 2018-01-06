@@ -3,9 +3,12 @@
 .main-banner ul{position:absolute;overflow:hidden;}
 .main-banner ul li{float:left;}
 .main-banner  ul li img{display: block;height:450px;}
-.main-banner .page{position:absolute;left:50%;bottom:0;padding:10px;margin-left:-150px;display:none;}
-.main-banner .page span{display:inline-block;margin:0 5px;width:30px;height:30px;line-height:30px;background-color:rgba(0,0,0,.6);text-align:center;color:#fff;border-radius: 50%;box-shadow:0 0 10px rgba(0,0,0,.5);}
-.main-banner .page span.active{background-color: rgba(255,0,0,.8);}
+.main-banner .page,.main-content .main-goods .goods-banner .goodsC .page{position:absolute;left:50%;bottom:0;padding:10px;margin-left:-150px;display:none;}
+.main-banner .page span,.main-content .main-goods .goods-banner .goodsC .page span{display:inline-block;margin:0 5px;width:30px;height:30px;line-height:30px;background-color:rgba(0,0,0,.6);text-align:center;color:#fff;border-radius: 50%;box-shadow:0 0 10px rgba(0,0,0,.5);}
+.main-banner .page span.active,.main-content .main-goods .goods-banner .goodsC .page span.active{background-color: rgba(255,0,0,.8);}
+.main-banner .arrow{
+    width: 100%;position:absolute;left:0;top:50%;padding:10px;margin-top:-15px;display:none;
+}
 /*..............
     main-content
 
@@ -15,9 +18,18 @@
     min-height:583px;
     margin-bottom:40px;
 }
+.main-content .main-new .main-newbanner {
+    height: 781px;
+    position:relative;
+    overflow:hidden;
+}
+.main-content .main-new .main-newbanner .new-goods{
+    position:absolute;
+}
 .main-content .main-new,.main-content .main-hot{
     height:880px;
     padding-top:52px;
+    
 }
 .main-content .main-new h3,.main-content .main-hot h3,.main-content .main-globalBuy h3,.main-content .main-goods h3{
     height:37px;
@@ -42,6 +54,7 @@
     border-left:1px solid #ddd;
     border-bottom:1px solid #ddd;
     overflow:hidden;
+    
 }
 .main-content .main-new  .new-goods ul li{
     float: left;
@@ -230,16 +243,41 @@
     color:#333;
 }
 .main-content .main-goods .goods-banner .goodsC{
-    width: 720px;
+    position:relative;
+
+    width: 721px;
     height: 350px;
     border-right: 1px solid #ddd;
+    overflow:hidden;
+}
+.main-content .main-goods .goods-banner .goodsC .arrow{
+    width: 721px;
+    position:absolute;left:0;top:50%;padding:10px;margin-top:-15px;display:none;
+}
+
+.main-content .main-goods .goods-banner .goodsC .arrow span,.main-banner .arrow span{
+    float:left;
+    display:inline-block;width:50px;height:50px;line-height:50px;
+    font-size:25px;
+    background-color:rgba(0,0,0,.6);text-align:center;color:#fff;border-radius: 50%;box-shadow:0 0 10px rgba(0,0,0,.5);
+    
+}
+.main-content .main-goods .goods-banner .goodsC .arrow span:nth-child(2),.main-banner .arrow span:nth-child(2){
+    float:right;
+    
+}
+.main-content .main-goods .goods-banner .goodsC ul{
+    position:absolute;
     overflow:hidden;
 }
 .main-content .main-goods .goods-banner .goodsC ul li{
     float:left;
 }
+.main-content .main-goods .goods-banner .goodsC ul li img{
+    display: block;
+}
 .main-content .main-goods .goods-banner .goodsR{
-    width: 238px;
+    width: 237px;
     height: 350px;
     overflow:hidden;
     text-align:center;

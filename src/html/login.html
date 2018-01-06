@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>register </title>
+    <title>login </title>
      <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/login.css">
     <script src="../lib/jquery-3.2.1.min.js"></script>
     <script> 
         $(function(){
@@ -30,14 +30,13 @@
         <div class="main-header"></div>
         <div class="main-content">
             <div class="container">
-                <div class="registerTab fr">
+                <div class="loginTab fr">
                     <ul>
                         <li>
-                            <h3 class="fl">邮箱注册<span></span></h3>
-                            <h3 class="fl phone">手机号码注册<span></span></h3>
+                            <h3 class="accountLogin">账号登录</h3>
                         </li>
                         <li>
-                            <input type="email" placeholder="电子邮箱" class="email"/>
+                            <input type="text" placeholder="邮箱/ID/手机号" class="email"/>
                             <span class="emailCon alert"></span>
                         </li>
                         <li>
@@ -45,17 +44,15 @@
                             <span class="passwdCon alert"></span>
                         </li>
                         <li>
-                            <input type="password" placeholder="请再次输入密码" class="conPasswd"/>
-                            <span class="conPasswdCon alert"></span>
-                        </li>
-                        <li class="checkA" >
-                            <input type="checkbox" />我同意<a href="">《TPS用户注册协议》</a>
+                            <input type="text" placeholder="验证码" class="verifi"/>
+                            <span class="verifiRandom"></span>
                         </li>
                         <li>
-                            <button class="agreen">同意协议并注册</button>
+                            <button class="agreen">登录</button>
                         </li>
+                        
                         <li>
-                            已有账户？ <a href="">去登录</a>
+                            <p class="fl">不是会员？ <a href="">马上注册</a></p><p class="fr"><a href="">忘记密码？</a></p>
                         </li>
                     </ul>
                 </div>

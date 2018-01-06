@@ -42,6 +42,8 @@ document.addEventListener('DOMContentLoaded',function(){
                new_goods.querySelectorAll('ul')[i].innerHTML = ul.innerHTML;
 
             }
+
+            // 动态生成食品饮酒等页面
             ulGoodsWire.innerHTML = res.map(item=>{
 
                 return `
@@ -85,7 +87,6 @@ document.addEventListener('DOMContentLoaded',function(){
 
     /*...............动态生成“热推”.............................................. */
     var hot_goods = document.querySelector('.hot-goods');
-    var xhr1 = new XMLHttpRequest();
     ajax.get({
         url:'http://localhost:368/project/src/api/hotBanner.php',
         success(res){

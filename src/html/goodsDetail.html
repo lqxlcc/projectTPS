@@ -6,8 +6,9 @@
      <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/goodsDetail.css">
+    <link rel="stylesheet" href="../lib/jquery-gdsZoom/jquery.gdsZoom.css">
     <script src="../lib/jquery-3.2.1.min.js"></script>
-
+    <script src="../lib/jquery-gdsZoom/jquery.gdsZoom.js"></script>
     <script>
         $(function(){
             $('.main-header').load('header.html',function(){
@@ -26,6 +27,18 @@
             });
         });
     </script>
+    <script>
+        $(function(){
+            $('.main-data').gdsZoom();
+            $('.main-dataF img').click(function(){
+
+                $('.main-data img').attr({
+                    'src':this.src,
+                    'data-big':$(this).attr('data-big') || this.src
+                });
+            })
+        });
+    </script>
 </head>
 <body>
     <div class="goodsDetail">
@@ -35,15 +48,15 @@
                 <h3><img src="../img/home.png" /></h3>
                 <div class="mainT">
                     <div class="main-dataL fl">
-                    <div class="main-data">
-                        <img src="" id="listImg" />
-                        
-                    </div>
-                    <ul class="main-dataF">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                        <div class="main-data">
+                            <img src="" id="listImg" data-big="../img/banner1.jpg"  />
+                            
+                        </div>
+                        <ul class="main-dataF">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                     </div>
                     
                     <div class="main-dataR fr">

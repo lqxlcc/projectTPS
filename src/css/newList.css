@@ -1,0 +1,51 @@
+.main-content{
+    height: 2000px;
+}
+.main-content .top{
+    height: 53px;
+    margin:10px 50px 50px 0;
+}
+.main-content .top .goodsType{
+    height: 53px;
+    
+}
+.main-content .top .goodsType h3{
+    line-height:40px;
+    margin-right:30px;
+}
+.main-content .top .goodsType ul{
+    width: 122px;
+    height: 40px;
+    border:1px solid #333;
+}
+.main-content h2{
+   border-left: solid 3px #ed4242;
+    color: #222;
+    font-size: 20px;
+    overflow: hidden;
+    padding-left: 15px;
+    border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+}
+.main-content .goodsList{padding-top:15px;height: 1000px;}
+.main-content .goodsList ul li{float:left;width: 296px;height: 302px;border:1px solid #ccc;position: relative;
+    background: #fff;
+    border: solid 1px #eee;
+    margin: 0 4px 4px 0;text-align: center;padding:0 10px;}
+.main-content .goodsList ul li img{width: 236px;}
+.main-content .goodsList ul li .decorationsAll{
+    height: 30px;margin-top:10px;
+}
+    
+.main-content .goodsList ul li .decorations{font-size:14px;height: 20px;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;}
+
+.main-content .goodsList ul li .price{font-size:14px;    color: #ee4242;}
+.main-content .goodsList ul li .map{display:block;    height: 11px;
+    width: 16px;
+    border: 1px solid #ddd;}
+.main-content .pages span{display:inline-block;margin:5px;width:40px;line-height:1.8;text-align: center;background-color:#dfdfdf;color:#666;}
+.main-content .pages span.active{background-color:#fc0;color:#fff;}

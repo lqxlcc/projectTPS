@@ -11,7 +11,14 @@ $(function(){
                 * 
      */
     var btnAgreen = document.querySelector('.agreen');
-    btnAgreen.onclick = function(e){
+    var email = document.querySelector('.email');
+    var emailCon = document.querySelector('.emailCon');
+    var passwd = document.querySelector('.passwd');
+    var passwdCon = document.querySelector('.passwdCon');
+    var conPasswd = document.querySelector('.conPasswd');
+    var conPasswdCon = document.querySelector('.conPasswdCon');
+
+    email.onblur = function(e){
         e = e || window.event;
         /*
             电子邮件
@@ -20,11 +27,13 @@ $(function(){
                 x@163.com
                 x@a-r.com.cn
          */
-        var email = document.querySelector('.email').value;
-        var reg = /^[a-z][\w\-\.]{5,17}@[a-z0-9\-]{2,}(\.[a-z]{2,}){1,2}$/i
-        if(!reg.test(email)){
-            alert('邮箱不合法');
+        var emailVlue = email.value;
+        var reg = /^[a-z|0-9][\w\-\.]{5,17}@[a-z0-9\-]{2,}(\.[a-z]{2,}){1,2}$/i
+        if(!reg.test(emailVlue)){
+            emailCon.innerText = '邮箱不合法';
             return false;
+        }else{
+            emailCon.innerText = '';
         }
         /*
             手机号码
@@ -43,20 +52,36 @@ $(function(){
                 长度小于20 
                 不能包含空格
          */
-        var password = document.querySelector('.passwd').value;
-        var reg = /^\S{1,20}$/
-        if(!reg.test(password)){
-            alert('密码不合法');
-            return false;
-        }
-        
-        var confirm_pwd = document.getElementById('conPasswd').value;
-        if(password != conPasswd){
-            alert('两次密码输入不一致');
-            return false;
-        }
+
         
     };
+    // passwd.onblur = function(){
+        
+    //     console.log(this);
+    // }  
+    
+    btnAgreen.onclick = function(){
+        var passwordVlue = passwd.value;
+        var reg = /^\S{1,20}$/
+        if(!reg.test(passwordVlue)){
+            passwdCon.innerText = '密码不合法';
+            
+            return false;
+        }else{
+            passwdCon.innerText = '';
 
+        }
+        var conPasswdVlue = conPasswd.value;
+        if(this.passwordVlue != conPasswdVlue){
+            conPasswdCon.innerText = '两次密码输入不一致';
+
+            return false;
+        }
+        else{
+            conPasswdCon.innerText = '';
+            console.log(22)
+            
+        }
+    }
 });
     

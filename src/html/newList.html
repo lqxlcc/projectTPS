@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>newList</title>
+     <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/newList.css">
+    <script src="../lib/jquery-3.2.1.min.js"></script>
+    <script> 
+        $(function(){
+            $('.main-header').load('header.html',function(){
+                $('.logo').attr('src','../img/logo.png');
+                $('.logo2').attr('src','../img/logo2.png');
+                $('.btnSearch img').attr('src','../img/search.png');
+                $('.header-car img').attr('src','../img/buycar.png');
+                $('.menu img').attr('src','../img/menu.png');
+                $('.menu img').attr('src','../img/menu.png');
+                $('.home').attr('href','../index.html');
+            });
+            $('.main-footer').load('footer.html',function(){
+                $('.li2 img').attr('src','../img/geo.png');
+                $('.footerR img').attr('src','../img/weixin.jpg');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="register">
+        <div class="main-header"></div>
+        <div class="main-content">
+            <div class="main-banner">
+                <ul>
+                    <li><img src="../img/newGoodsList1.jpg" ></li>
+                    <li><img src="../img/newGoodsList2.jpg"></li>
+                    <li><img src="../img/newGoodsList3.jpg"></li>
+                    <li><img src="../img/newGoodsList4.jpg"></li>
+                    <li><img src="../img/newGoodsList5.jpg"></li>
+                    <li><img src="../img/newGoodsList6.jpg"></li>
+                    <li><img src="../img/newGoodsList7.jpg"></li>
+                    <li><img src="../img/newGoodsList8.jpg"></li>
+                    <li><img src="../img/newGoodsList9.jpg"></li>
+                    <li><img src="../img/newGoodsList10.jpg"></li>
+
+                </ul>
+            </div>
+            <div class="container">
+                <div class="top">
+                    <div class="goodsType fr">
+                        <h3 class="fl">商品分类</h3>
+                        <ul class="fr"></ul>
+                    </div>
+                </div>
+                
+                <h2>新品上市</h2>
+                <div class="goodsList">
+                    
+                </div>
+                <div class="pages"></div>
+            </div>
+        </div>
+        <div class="main-footer"></div>
+    </div>
+    <script src="../js/common.js"></script>
+    <script src="../js/newList.js"></script>
+</body>
+</html>

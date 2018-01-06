@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="lib/jquery-3.2.1.min.js"></script>
+    <script src="lib/jquery-lxCarousel/jquery.lxCarousel.js"></script>
     <script>
         $(function(){
             $('.main-header').load('html/header.html',function(){
@@ -17,6 +18,8 @@
                 $('.appDownload img').attr('src','img/phone.png');
                 $('.header-bar .down img').attr('src','img/cn.jpg');
                 $('.c-o').attr('href','html/register.html');
+                $('.header-car .down').attr('href','html/buyCar.html');
+                $('.newList').attr('href','html/newList.html');
             });
             $('.main-footer').load('html/footer.html');
         });
@@ -46,11 +49,14 @@
                 <!-- 新品上架 -->
                 <div class="main-new">
                     <h3>新品上架<i>/</i><i class="day">每天一点小期待</i><span class="fr">更多></span></h3>
-                    <div class="new-goods">
-                        <ul></ul>
-                        <ul></ul>
-                        <ul></ul>
+                    <div class="main-newbanner">
+                        <div class="new-goods">
+                            <ul class="fl"></ul>
+                            <ul class="fl"></ul>
+                            <ul class="fl"></ul>
+                        </div>
                     </div>
+                    
                 </div>
                 <!-- 热卖推荐 -->
                 <div class="main-hot">
@@ -114,6 +120,7 @@
                                     </li>
                                 </ul>
                             </div>
+                            
                             <div class="goodsC fl">
                                 <ul>
                                     <li> 
@@ -886,4 +893,5 @@
 </body>
 <script src="js/common.js"></script>
 <script src="js/index.js"></script>
+<script src="js/everyCarousel.js"></script>
 </html>
