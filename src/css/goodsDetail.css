@@ -24,11 +24,16 @@
     border: 2px solid #ed4242;
     float:left;
 }
+.main-content .main-dataL .main-dataF li img{
+    height: 56px;
+    width: 56px;
+   
+}
 .main-content .main-data{
     width: 458px;
     height: 458px;
     border:1px solid #ccc;
-    
+
 }
 .main-content .main-data #listImg{
     width: 456px;
@@ -100,6 +105,27 @@
 .main-content .main-dataR .priceD .cqty{
     margin-left:30px;
 }
+.main-content .main-dataR .dBuy{
+    width: 660px; 
+    height: 46px;
+    margin-top:20px;
+}
+.main-content .main-dataR .dBuy button{
+    display: inline-block;
+    width: 178px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    margin-right: 20px;
+    background: #ffebeb;
+    border: 1px solid #ed4242;
+    color: #ff6600;
+    text-align: center;
+}
+.main-content .main-dataR .dBuy .dbuycar{
+   background: #ed4242;
+    color: #fff;
+}
 .main-content .mainF{
     text-align:center;
 
@@ -124,7 +150,6 @@
 .main-content .mainF .introduceA .introduceAl{
     width: 170px;
     height: 7000px;
-    background: pink;
 }
 .main-content .mainF .introduceA .introduceAl h3,.main-content .mainF .introduceA .introduceAl h3{
     color: #333;
@@ -135,13 +160,59 @@
     line-height: 3;
     border-bottom: 1px solid #ddd;
 }
+.main-content .mainF .introduceA .introduceAl ul li{
+    margin:0 10px;
+    border-bottom:1px solid #ccc;
+}
+.main-content .mainF .introduceA .introduceAl ul li a{
+    display:block;
+    width: 150px;
+    height: 28px;
+    line-height:28px;
+    font-size:12px;
+    text-align:center;
+
+}
+.main-content .mainF .introduceA .introduceAl ul li a:nth-child(1){
+    height: 33px;
+    line-height:33px;
+    font-size:14px;
+    font-weight:bold;
+    color:#333;
+
+}
 .main-content .mainF .introduceA .introduceAc{
     width:800px;
     height: 7000px;
-    background: red;
 }
+
 .main-content .mainF .introduceA .introduceAr{
     width: 190px;
     height: 7000px;
-    background: green;
 }
+.main-content .mainF .introduceA .introduceAr .hotGoods ul li{width:190px;height: 234px;border:1px solid #ccc;position: relative;
+    background: #fff;
+    border: solid 1px #eee;
+    margin: 0 4px 4px 0;text-align: center;padding:0 10px;}
+.main-content .mainF .introduceA .introduceAr .hotGoods ul li img{width: 190px;}
+.main-content .mainF .introduceA .introduceAr .hotGoods ul li .decorationsAll{
+    height: 20px;
+}
+    
+.main-content .mainF .introduceA .introduceAr .hotGoods ul li .decorations{
+    font-size:12px;height: 14px;
+    width: 153px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;}
+
+.main-content .mainF .introduceA .introduceAr .hotGoods ul li .price{
+    font-size:12px;
+    color: #ee4242;}
+.main-content .mainF .introduceA .introduceAr .hotGoods ul li .map{
+    display:block;    
+    height: 11px;
+    width: 16px;
+    border: 1px solid #ddd;}
+.main-content .mainF .introduceA .introduceAr .hotGoods ul li .made{
+font-size:12px;}

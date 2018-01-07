@@ -38,11 +38,11 @@ document.addEventListener('DOMContentLoaded',function(){
 
                 return `
                     <li data-guid="${item.id}">
-                        <p class="imgs"><img src="${item.img}"/></p>
+                        <p class="imgs"><img src="../${item.img}"/></p>
                         <div class="decorationsAll">
                             <p class="decorations fl">${item.decorations}</p>
                             
-                            <p class="contry fr"><i class="made">${item.made}</i><img src="${item.map}" class="map"/></p>
+                            <p class="contry fr"><i class="made">${item.made}</i><img src="../${item.map}" class="map"/></p>
                         </div>
                         <p class="price">￥${item.price}</p>
                         
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded',function(){
             }).join('');
             goodsList.innerText = '';
             goodsList.appendChild(ul);
-
+             drumpDetail(res.data);
 
             // 处理分页
             pages.innerText = '';
@@ -88,7 +88,44 @@ document.addEventListener('DOMContentLoaded',function(){
             xhr.send(`pageNo=${pageNo}&qty=${qty}`);
         }
     }
+    /*
+            .......跳转到详情页...............
+         */
+        
+    function drumpDetail(res){
 
+       
+            var goodsDetailUl = goodsList.querySelector('ul');
+                for(var i=0;i<goodsDetailUl.children.length;i++){
+                    goodsDetailUl.children[i].onclick = function(e){
+                    console.log(2222)
+
+                        var tagname = ['li','img','i','p'];
+                        if(tagname.indexOf(e.target.tagName.toLowerCase())){
+                            
+                            var params = '?';
+                            var _id = this.getAttribute('data-guid');
+                            console.log(_id)
+                            for(var j=0;j<res.length;j++){
+                            
+
+                                if(_id == res[j].id){
+                                    for(var attr in res[j]){
+                                        params += attr + '=' + encodeURI(res[j][attr]) + '&';
+                                    }
+                                }
+                            }
+                            // console.log(params);
+                             //删除多余的&
+                            params = params.slice(0,-1);
+                            // 跳转页面
+                            location.href = '../html/goodsDetail.html' + params;
+                        }
+                    }
+                }
+       
+        
+    }
 
     
 });

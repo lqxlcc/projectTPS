@@ -7,38 +7,10 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/goodsDetail.css">
     <link rel="stylesheet" href="../lib/jquery-gdsZoom/jquery.gdsZoom.css">
-    <script src="../lib/jquery-3.2.1.min.js"></script>
-    <script src="../lib/jquery-gdsZoom/jquery.gdsZoom.js"></script>
-    <script>
-        $(function(){
-            $('.main-header').load('header.html',function(){
-                $('.logo').attr('src','../img/logo.png');
-                $('.logo2').attr('src','../img/logo2.png');
-                $('.btnSearch img').attr('src','../img/search.png');
-                $('.header-car img').attr('src','../img/buycar.png');
-                $('.menu img').attr('src','../img/menu.png');
-                $('.menu img').attr('src','../img/menu.png');
-                $('.home').attr('href','../index.html');
-                
-            });
-            $('.main-footer').load('footer.html',function(){
-                $('.li2 img').attr('src','../img/geo.png');
-                $('.footerR img').attr('src','../img/weixin.jpg');
-            });
-        });
-    </script>
-    <script>
-        $(function(){
-            $('.main-data').gdsZoom();
-            $('.main-dataF img').click(function(){
-
-                $('.main-data img').attr({
-                    'src':this.src,
-                    'data-big':$(this).attr('data-big') || this.src
-                });
-            })
-        });
-    </script>
+    <!-- <script src="../lib/jquery-3.2.1.min.js"></script>
+    <script src="../lib/jquery-gdsZoom/jquery.gdsZoom.js"></script> -->
+    
+    
 </head>
 <body>
     <div class="goodsDetail">
@@ -49,13 +21,13 @@
                 <div class="mainT">
                     <div class="main-dataL fl">
                         <div class="main-data">
-                            <img src="" id="listImg" data-big="../img/banner1.jpg"  />
+                            <img src="" id="listImg" imgbig=""  />
                             
                         </div>
                         <ul class="main-dataF">
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li><img src="" class="smallImg1" /></li>
+                            <li><img src="" class="smallImg2" /></li>
+                            <li><img src="" class="smallImg3" /></li>
                         </ul>
                     </div>
                     
@@ -67,8 +39,13 @@
                         <p class="priceD"><span class="price">价格：</span><span id="price"></span></p>
                         <p class="priceD"><span class="price">规格：</span><s></s></p>
                         <p class="priceD"><span class="price">数量：</span><input type="number" class="qty" /><span class="price cqty">库存：0</span></p>
-                        <p>发货地：</p>
+                        <p>发货地： 北京市</p>
+                        <div class="dBuy">
+                            <button class="dbuy">立即购买</button>
+                            <a href="buyCar.html"><button class="dbuycar">加入购物车</button></a>
+                        </div>
                     </div>
+                    <div></div>
                 </div>
                 <div class="mainF">
                     <div class="h50">
@@ -78,10 +55,137 @@
                     <div class="introduceA">
                         <div class="introduceAl fl">
                             <h3>全部分类</h3>
+                            <ul>
+                                <li>
+                                    <a href="">婴幼儿奶粉</a>
+                                    <a href="">喂养洗护用品</a>
+                                    <a href="">婴儿服饰</a>
+                                    <a href="">玩具乐器</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">婴幼儿辅食</a>
+                                    <a href="">童车童床</a>
+                                    <a href="">婴幼儿营养</a>
+                                    <a href="">孕产妇用品</a>
+                                </li>
+                                <li> <a href="">婴幼儿奶粉</a>
+                                    <a href="">喂养洗护用品</a>
+                                    <a href="">婴儿服饰</a>
+                                    <a href="">玩具乐器</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">婴幼儿辅食</a>
+                                    <a href="">童车童床</a>
+                                    <a href="">婴幼儿营养</a>
+                                    <a href="">孕产妇用品</a></li>
+                                <li> <a href="">婴幼儿奶粉</a>
+                                    <a href="">喂养洗护用品</a>
+                                    <a href="">婴儿服饰</a>
+                                    <a href="">玩具乐器</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">婴幼儿辅食</a>
+                                    <a href="">童车童床</a>
+                                    <a href="">婴幼儿营养</a>
+                                    <a href="">孕产妇用品</a></li>
+                                <li> <a href="">婴幼儿奶粉</a>
+                                    <a href="">喂养洗护用品</a>
+                                    <a href="">婴儿服饰</a>
+                                    <a href="">玩具乐器</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">婴幼儿辅食</a>
+                                    <a href="">童车童床</a>
+                                    <a href="">婴幼儿营养</a>
+                                    <a href="">孕产妇用品</a></li>
+                                <li> <a href="">婴幼儿奶粉</a>
+                                    <a href="">喂养洗护用品</a>
+                                    <a href="">婴儿服饰</a>
+                                    <a href="">玩具乐器</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">婴幼儿辅食</a>
+                                    <a href="">童车童床</a>
+                                    <a href="">婴幼儿营养</a>
+                                    <a href="">孕产妇用品</a></li>
+                                <li> <a href="">婴幼儿奶粉</a>
+                                    <a href="">喂养洗护用品</a>
+                                    <a href="">婴儿服饰</a>
+                                    <a href="">玩具乐器</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">婴幼儿辅食</a>
+                                    <a href="">童车童床</a>
+                                    <a href="">婴幼儿营养</a>
+                                    <a href="">孕产妇用品</a></li>
+                                <li> <a href="">婴幼儿奶粉</a>
+                                    <a href="">喂养洗护用品</a>
+                                    <a href="">婴儿服饰</a>
+                                    <a href="">玩具乐器</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">婴幼儿辅食</a>
+                                    <a href="">童车童床</a>
+                                    <a href="">婴幼儿营养</a>
+                                    <a href="">孕产妇用品</a></li>
+                                <li> <a href="">婴幼儿奶粉</a>
+                                    <a href="">喂养洗护用品</a>
+                                    <a href="">婴儿服饰</a>
+                                    <a href="">玩具乐器</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">婴幼儿辅食</a>
+                                    <a href="">童车童床</a>
+                                    <a href="">婴幼儿营养</a>
+                                    <a href="">孕产妇用品</a></li>
+                                <li> <a href="">婴幼儿奶粉</a>
+                                    <a href="">喂养洗护用品</a>
+                                    <a href="">婴儿服饰</a>
+                                    <a href="">玩具乐器</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">婴幼儿辅食</a>
+                                    <a href="">童车童床</a>
+                                    <a href="">婴幼儿营养</a>
+                                    <a href="">孕产妇用品</a></li>
+                                <li> <a href="">婴幼儿奶粉</a>
+                                    <a href="">喂养洗护用品</a>
+                                    <a href="">婴儿服饰</a>
+                                    <a href="">玩具乐器</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">婴幼儿辅食</a>
+                                    <a href="">童车童床</a>
+                                    <a href="">婴幼儿营养</a>
+                                    <a href="">孕产妇用品</a></li>
+                                <li> <a href="">婴幼儿奶粉</a>
+                                    <a href="">喂养洗护用品</a>
+                                    <a href="">婴儿服饰</a>
+                                    <a href="">玩具乐器</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">婴幼儿辅食</a>
+                                    <a href="">童车童床</a>
+                                    <a href="">婴幼儿营养</a>
+                                    <a href="">孕产妇用品</a></li>
+                                <li> <a href="">婴幼儿奶粉</a>
+                                    <a href="">喂养洗护用品</a>
+                                    <a href="">婴儿服饰</a>
+                                    <a href="">玩具乐器</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">婴幼儿辅食</a>
+                                    <a href="">童车童床</a>
+                                    <a href="">婴幼儿营养</a>
+                                    <a href="">孕产妇用品</a></li>
+                                <li> <a href="">婴幼儿奶粉</a>
+                                    <a href="">喂养洗护用品</a>
+                                    <a href="">婴儿服饰</a>
+                                    <a href="">玩具乐器</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">婴幼儿辅食</a>
+                                    <a href="">童车童床</a>
+                                    <a href="">婴幼儿营养</a>
+                                    <a href="">孕产妇用品</a></li>
+                            </ul>
                         </div>
-                        <div class="introduceAc fl"></div>
+                        <div class="introduceAc fl">
+                            <img src=""class="dImg1"/>
+                            <img src=""class="dImg2"/>
+                            <img src=""class="dImg3"/>
+                            
+                        </div>
                         <div class="introduceAr fr">
                             <h3>热销推荐</h3>
+                            <div class="hotGoods"></div>
                         </div>
                     </div>
                 </div>
@@ -91,6 +195,6 @@
         <div class="main-footer"></div>
     </div>
 </body>
-    <script src="../js/goodsDetail.js"></script>
-
+    <!-- <script src="../js/goodsDetail.js"></script> -->
+<script src="../js/require.js" data-main="../js/goodsDetail"></script>
 </html>

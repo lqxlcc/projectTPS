@@ -3,481 +3,600 @@
         "id":"goods1",
         "price":1400.03,
         "decorations":"广州地区 黄埔军校猎鹰拓展 3天自组团队强化营",
-        "img":"../img/newList1.jpg",
+        "img":"img/newList1.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods2",
         "price":3263.1,
         "decorations":"泠泠岛 电动升降桌专卖 升降电脑书桌站立式办公台式人体工学桌子 全国包邮",
-        "img":"../img/newList2.jpg",
+        "img":"img/newList2.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods3",
         "price":340.03,
         "decorations":"TGGC 2017冬装立领修身显瘦夹克式上衣外套 保暖短羽绒服艾尚服饰 S13232",
-        "img":"../img/newList3.jpg",
+        "img":"img/newList3.jpg",
         "made":"日本",
-        "map":"../img/jp.jpg"
+        "map":"img/jp.jpg",
+        "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods4",
         "price":140.03,
         "decorations":"永康地区 东城渔味饭店石锅鱼4-5人套餐'",
-        "img":"../img/newList4.jpg",
+        "img":"img/newList4.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods5",
         "price":900.03,
         "decorations":"ZUZAI（自在）男士云曦系列科技蓄热绒外套",
-        "img":"../img/newList5.jpg",
+        "img":"img/newList5.jpg",
         "made":"美国",
-        "map":"../img/us.jpg"
+        "map":"img/us.jpg",
+       "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods6",
         "price":1470,
         "decorations":"泡泡噜POIPILU2018新款儿童棉服艾尚服饰B7164330",
-        "img":"../img/newList6.jpg",
+        "img":"img/newList6.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods7",
         "price":997.03,
         "decorations":"泡泡噜POIPILU2018新款儿童加厚梭织长裤艾尚服饰B4164350",
-        "img":"../img/newList7.jpg",
+        "img":"img/newList7.jpg",
         "made":"美国",
-        "map":"../img/us.jpg"
+        "map":"img/us.jpg",
+         "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods8",
         "price":600.03,
         "decorations":"TGGC 2017冬装立领修身显瘦夹克式上衣外套 保暖短羽绒服艾尚服饰 S13232",
-        "img":"../img/newList8.jpg",
+        "img":"img/newList8.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods9",
         "price":14.03,
         "decorations":"广州地区 黄埔军校猎鹰拓展 3天自组团队强化营",
-        "img":"../img/newList9.jpg",
+        "img":"img/newList9.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods10",
         "price":100.03,
         "decorations":"广州地区 黄埔军校猎鹰拓展 3天自组团队强化营",
-        "img":"../img/newList10.jpg",
+        "img":"img/newList10.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods11",
         "price":14010.03,
         "decorations":"广州地区 黄埔军校猎鹰拓展 3天自组团队强化营",
-        "img":"../img/newList11.jpg",
+        "img":"img/newList11.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods12",
         "price":32613.1,
         "decorations":"泠泠岛 电动升降桌专卖 升降电脑书桌站立式办公台式人体工学桌子 全国包邮",
-        "img":"../img/newList12.jpg",
+        "img":"img/newList12.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods13",
         "price":320.03,
         "decorations":"'TGGC 2017冬装立领修身显瘦夹克式上衣外套 保暖短羽绒服艾尚服饰 S13232",
-        "img":"../img/newList13.jpg",
+        "img":"img/newList13.jpg",
         "made":"日本",
-        "map":"../img/jp.jpg"
+        "map":"img/jp.jpg",
+        "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods14",
         "price":1140.03,
         "decorations":"永康地区 东城渔味饭店石锅鱼4-5人套餐",
-        "img":"../img/newList14.jpg",
+        "img":"img/newList14.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+         "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods15",
         "price":9010.03,
         "decorations":"ZUZAI（自在）男士云曦系列科技蓄热绒外套",
-        "img":"../img/newList15.jpg",
+        "img":"img/newList15.jpg",
         "made":"美国",
-        "map":"../img/us.jpg"
+        "map":"img/us.jpg",
+        "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods16",
         "price":14170,
         "decorations":"泡泡噜POIPILU2018新款儿童棉服艾尚服饰B7164330",
-        "img":"../img/newList16.jpg",
+        "img":"img/newList16.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods17",
         "price":9937.03,
         "decorations":"泡泡噜POIPILU2018新款儿童加厚梭织长裤艾尚服饰B4164350",
-        "img":"../img/newList17.jpg",
+        "img":"img/newList17.jpg",
         "made":"美国",
-        "map":"../img/us.jpg"
+        "map":"img/us.jpg",
+        "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods18",
         "price":1600.03,
         "decorations":"TGGC 2017冬装立领修身显瘦夹克式上衣外套 保暖短羽绒服艾尚服饰 S13232",
-        "img":"../img/newList18.jpg",
+        "img":"img/newList18.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods19",
         "price":514.03,
         "decorations":"广州地区 黄埔军校猎鹰拓展 3天自组团队强化营",
-        "img":"../img/newList19.jpg",
+        "img":"img/newList19.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods20",
         "price":1003.03,
         "decorations":"广州地区 黄埔军校猎鹰拓展 3天自组团队强化营",
-        "img":"../img/newList20.jpg",
+        "img":"img/newList20.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods21",
         "price":14002,
         "decorations":"广州地区 黄埔军校猎鹰拓展 3天自组团队强化营",
-        "img":"../img/newList1.jpg",
+        "img":"img/newList1.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+       "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods22",
         "price":32632,
         "decorations":"泠泠岛 电动升降桌专卖 升降电脑书桌站立式办公台式人体工学桌子 全国包邮",
-        "img":"../img/newList2.jpg",
+        "img":"img/newList2.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+       "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods23",
         "price":3402,
         "decorations":"TGGC 2017冬装立领修身显瘦夹克式上衣外套 保暖短羽绒服艾尚服饰 S13232",
-        "img":"../img/newList3.jpg",
+        "img":"img/newList3.jpg",
         "made":"日本",
-        "map":"../img/jp.jpg"
+        "map":"img/jp.jpg",
+        "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods24",
         "price":1402,
         "decorations":"永康地区 东城渔味饭店石锅鱼4-5人套餐",
-        "img":"../img/newList4.jpg",
+        "img":"img/newList4.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+         "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods25",
         "price":9002,
         "decorations":"ZUZAI（自在）男士云曦系列科技蓄热绒外套",
-        "img":"../img/newList5.jpg",
+        "img":"img/newList5.jpg",
         "made":"美国",
-        "map":"../img/us.jpg"
+        "map":"img/us.jpg",
+        "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods26",
         "price":14702,
         "decorations":"泡泡噜POIPILU2018新款儿童棉服艾尚服饰B7164330",
-        "img":"../img/newList6.jpg",
+        "img":"img/newList6.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+       "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods27",
         "price":9972,
         "decorations":"泡泡噜POIPILU2018新款儿童加厚梭织长裤艾尚服饰B4164350",
-        "img":"../img/newList7.jpg",
+        "img":"img/newList7.jpg",
         "made":"美国",
-        "map":"../img/us.jpg"
+        "map":"img/us.jpg",
+        "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods28",
         "price":6002,
         "decorations":"TGGC 2017冬装立领修身显瘦夹克式上衣外套 保暖短羽绒服艾尚服饰 S13232",
-        "img":"../img/newList8.jpg",
+        "img":"img/newList8.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+         "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods29",
         "price":142,
         "decorations":"广州地区 黄埔军校猎鹰拓展 3天自组团队强化营",
-        "img":"../img/newList9.jpg",
+        "img":"img/newList9.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods30",
         "price":1002,
         "decorations":"广州地区 黄埔军校猎鹰拓展 3天自组团队强化营",
-        "img":"../img/newList10.jpg",
+        "img":"img/newList10.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+         "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods31",
         "price":1401,
         "decorations":"广州地区 黄埔军校猎鹰拓展 3天自组团队强化营",
-        "img":"../img/newList11.jpg",
+        "img":"img/newList11.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods32",
         "price":3261,
         "decorations":"泠泠岛 电动升降桌专卖 升降电脑书桌站立式办公台式人体工学桌子 全国包邮",
-        "img":"../img/newList12.jpg",
+        "img":"img/newList12.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods33",
         "price":320.03,
         "decorations":"TGGC 2017冬装立领修身显瘦夹克式上衣外套 保暖短羽绒服艾尚服饰 S13232",
-        "img":"../img/newList13.jpg",
+        "img":"img/newList13.jpg",
         "made":"日本",
-        "map":"../img/jp.jpg"
+        "map":"img/jp.jpg",
+        "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods34",
         "price":1140,
         "decorations":"永康地区 东城渔味饭店石锅鱼4-5人套餐",
-        "img":"../img/newList14.jpg",
+        "img":"img/newList14.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods35",
         "price":9010,
         "decorations":"ZUZAI（自在）男士云曦系列科技蓄热绒外套",
-        "img":"../img/newList15.jpg",
+        "img":"img/newList15.jpg",
         "made":"美国",
-        "map":"../img/us.jpg"
+        "map":"img/us.jpg",
+        "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail2.jpg"
     },
     {
         "id":"goods36",
         "price":14170,
         "decorations":"泡泡噜POIPILU2018新款儿童棉服艾尚服饰B7164330",
-        "img":"../img/newList16.jpg",
+        "img":"img/newList16.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+      "zoom1":"img/goodsDetail1.jpg",
+        "zoom2":"img/goodsDetail6.jpg"
     },
     {
         "id":"goods37",
         "price":9937.03,
         "decorations":"泡泡噜POIPILU2018新款儿童加厚梭织长裤艾尚服饰B4164350",
-        "img":"../img/newList22.jpg",
+        "img":"img/newList22.jpg",
         "made":"美国",
-        "map":"../img/us.jpg"
+        "map":"img/us.jpg",
+        "zoom1":"img/newzoom1.jpg",
+        "zoom2":"img/newzoom2.jpg"
     },
     {
         "id":"goods38",
         "price":1600,
         "decorations":"TGGC 2017冬装立领修身显瘦夹克式上衣外套 保暖短羽绒服艾尚服饰 S13232",
-        "img":"../img/newList12.jpg",
+        "img":"img/newList12.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/newzoom1.jpg",
+        "zoom2":"img/newzoom2.jpg"
     },
     {
         "id":"goods39",
         "price":514,
         "decorations":"广州地区 黄埔军校猎鹰拓展 3天自组团队强化营",
-        "img":"../img/newList21.jpg",
+        "img":"img/newList21.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/newzoom1.jpg",
+        "zoom2":"img/newzoom2.jpg"
     },
     {
         "id":"goods40",
         "price":1003,
         "decorations":"广州地区 黄埔军校猎鹰拓展 3天自组团队强化营",
-        "img":"../img/newList23.jpg",
+        "img":"img/newList23.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/newzoom1.jpg",
+        "zoom2":"img/newzoom2.jpg"
     },
     {
         "id":"goods41",
         "price":14005,
         "decorations":"广州地区 黄埔军校猎鹰拓展 3天自组团队强化营",
-        "img":"../img/newList1.jpg",
+        "img":"img/newList1.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/newzoom1.jpg",
+        "zoom2":"img/newzoom2.jpg"
     },
     {
         "id":"goods42",
         "price":3265,
         "decorations":"泠泠岛 电动升降桌专卖 升降电脑书桌站立式办公台式人体工学桌子 全国包邮",
-        "img":"../img/newList2.jpg",
+        "img":"img/newList2.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/newzoom1.jpg",
+        "zoom2":"img/newzoom2.jpg"
     },
     {
         "id":"goods43",
         "price":34053,
         "decorations":"TGGC 2017冬装立领修身显瘦夹克式上衣外套 保暖短羽绒服艾尚服饰 S13232",
-        "img":"../img/newList3.jpg",
+        "img":"img/newList3.jpg",
         "made":"日本",
-        "map":"../img/jp.jpg"
+        "map":"img/jp.jpg",
+        "zoom1":"img/newzoom1.jpg",
+        "zoom2":"img/newzoom2.jpg"
     },
     {
         "id":"goods44",
         "price":145,
         "decorations":"永康地区 东城渔味饭店石锅鱼4-5人套餐",
-        "img":"../img/newList4.jpg",
+        "img":"img/newList4.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/newzoom1.jpg",
+        "zoom2":"img/newzoom2.jpg"
     },
     {
         "id":"goods45",
         "price":90053,
         "decorations":"ZUZAI（自在）男士云曦系列科技蓄热绒外套",
-        "img":"../img/newList5.jpg",
+        "img":"img/newList5.jpg",
         "made":"美国",
-        "map":"../img/us.jpg"
+        "map":"img/us.jpg",
+        "zoom1":"img/newzoom1.jpg",
+        "zoom2":"img/newzoom2.jpg"
     },
     {
         "id":"goods46",
         "price":14750,
         "decorations":"泡泡噜POIPILU2018新款儿童棉服艾尚服饰B7164330",
-        "img":"../img/newList6.jpg",
+        "img":"img/newList6.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/newzoom1.jpg",
+        "zoom2":"img/newzoom2.jpg"
     },
     {
         "id":"goods47",
         "price":9953,
         "decorations":"泡泡噜POIPILU2018新款儿童加厚梭织长裤艾尚服饰B4164350",
-        "img":"../img/newList7.jpg",
+        "img":"img/newList7.jpg",
         "made":"美国",
-        "map":"../img/us.jpg"
+        "map":"img/us.jpg",
+        "zoom1":"img/newzoom1.jpg",
+        "zoom2":"img/newzoom2.jpg"
     },
     {
         "id":"goods48",
         "price":60053,
         "decorations":"TGGC 2017冬装立领修身显瘦夹克式上衣外套 保暖短羽绒服艾尚服饰 S13232",
-        "img":"../img/newList8.jpg",
+        "img":"img/newList8.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/newzoom1.jpg",
+        "zoom2":"img/newzoom2.jpg"
     },
     {
         "id":"goods49",
         "price":14.53,
         "decorations":"广州地区 黄埔军校猎鹰拓展 3天自组团队强化营",
-        "img":"../img/newList9.jpg",
+        "img":"img/newList9.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/newzoom1.jpg",
+        "zoom2":"img/newzoom2.jpg"
     },
 
     {
         "id":"goods50",
         "price":1063,
         "decorations":"2017冬装立领修身显瘦夹克式上衣外套 保暖短羽绒服艾尚服饰 S13232",
-        "img":"../img/newList10.jpg",
+        "img":"img/newList10.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/newzoom1.jpg",
+        "zoom2":"img/newzoom2.jpg"
     },
     {
         "id":"goods51",
         "price":140603,
         "decorations":"TGGC 2017冬装立领修身显瘦夹克式上衣外套 保暖短羽绒服艾尚服饰 S13232",
-        "img":"../img/newList11.jpg",
+        "img":"img/newList11.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/newzoom1.jpg",
+        "zoom2":"img/newzoom2.jpg"
     },
     {
         "id":"goods52",
         "price":32616,
         "decorations":"泠泠岛 电动升降桌专卖 升降电脑书桌站立式办公台式人体工学桌子 全国包邮",
-        "img":"../img/newList12.jpg",
+        "img":"img/newList12.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/newzoom1.jpg",
+        "zoom2":"img/newzoom2.jpg"
     },
     {
         "id":"goods53",
         "price":3263,
         "decorations":"永康地区 东城渔味饭店石锅鱼4-5人套餐",
-        "img":"../img/newList13.jpg",
+        "img":"img/newList13.jpg",
         "made":"日本",
-        "map":"../img/jp.jpg"
+        "map":"img/jp.jpg",
+        "zoom1":"img/newzoom1.jpg",
+        "zoom2":"img/newzoom2.jpg"
     },
     {
         "id":"goods54",
         "price":11463,
         "decorations":"永康地区 东城渔味饭店石锅鱼4-5人套餐TGGC ",
-        "img":"../img/newList14.jpg",
+        "img":"img/newList14.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/newzoom1.jpg",
+        "zoom2":"img/newzoom2.jpg"
     },
     {
         "id":"goods55",
         "price":906,
         "decorations":"ZUZAI（自在）男士云曦系列科技蓄热绒外套",
-        "img":"../img/newList15.jpg",
+        "img":"img/newList15.jpg",
         "made":"美国",
-        "map":"../img/us.jpg"
+        "map":"img/us.jpg",
+        "zoom1":"img/newzoom1.jpg",
+        "zoom2":"img/newzoom2.jpg"
     },
     {
         "id":"goods56",
         "price":1416,
         "decorations":"泡泡噜POIPILU2018新款儿童棉服艾尚服饰B7164330",
-        "img":"../img/newList16.jpg",
+        "img":"img/newList16.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/newzoom1.jpg",
+        "zoom2":"img/newzoom2.jpg"
     },
     {
         "id":"goods57",
         "price":99363,
         "decorations":"泡泡噜POIPILU2018新款儿童加厚梭织长裤艾尚服饰B4164350",
-        "img":"../img/newList17.jpg",
+        "img":"img/newList17.jpg",
         "made":"美国",
-        "map":"../img/us.jpg"
+        "map":"img/us.jpg",
+        "zoom1":"img/newzoom1.jpg",
+        "zoom2":"img/newzoom2.jpg"
     },
     {
         "id":"goods58",
         "price":16066,
         "decorations":"TGGC 2017冬装立领修身显瘦夹克式上衣外套 保暖短羽绒服艾尚服饰 S13232",
-        "img":"../img/newList18.jpg",
+        "img":"img/newList18.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/newzoom1.jpg",
+        "zoom2":"img/newzoom2.jpg"
     },
     {
         "id":"goods59",
         "price":516,
         "decorations":"广州地区 黄埔军校猎鹰拓展 3天自组团队强化营",
-        "img":"../img/newList19.jpg",
+        "img":"img/newList19.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/newzoom1.jpg",
+        "zoom2":"img/newzoom2.jpg"
     },
     {
         "id":"goods60",
         "price":1006,
         "decorations":"广州地区 黄埔军校猎鹰拓展 3天自组团队强化营",
-        "img":"../img/newList20.jpg",
+        "img":"img/newList20.jpg",
         "made":"中国",
-        "map":"../img/cn.jpg"
+        "map":"img/cn.jpg",
+        "zoom1":"img/newzoom1.jpg",
+        "zoom2":"img/newzoom2.jpg"
     }
 ]

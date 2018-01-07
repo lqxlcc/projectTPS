@@ -9,21 +9,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
-    <script src="lib/jquery-3.2.1.min.js"></script>
-    <script src="lib/jquery-lxCarousel/jquery.lxCarousel.js"></script>
-    <script>
-        $(function(){
-            $('.main-header').load('html/header.html',function(){
-                $('.home').attr('href','index.html');
-                $('.appDownload img').attr('src','img/phone.png');
-                $('.header-bar .down img').attr('src','img/cn.jpg');
-                $('.c-o').attr('href','html/register.html');
-                $('.header-car .down').attr('href','html/buyCar.html');
-                $('.newList').attr('href','html/newList.html');
-            });
-            $('.main-footer').load('html/footer.html');
-        });
-    </script>
+    
 </head>
 
 <body>
@@ -891,7 +877,6 @@
         <div class="main-footer"></div>
     </div>
 </body>
-<script src="js/common.js"></script>
-<script src="js/index.js"></script>
-<script src="js/everyCarousel.js"></script>
+
+<script src="js/require.js" data-main="js/index"></script>
 </html>

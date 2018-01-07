@@ -227,54 +227,44 @@
     display: none;
     top: 0;
     padding-top: 2px;
+    padding-left:20px;
     left: 160px;
-    width: 80px;
-    text-align:center;
+    width: 800px;
     background: white;
+    text-align:left;
 }
-.allGoodsType .allTypeM>li>.allTypeB>li>a,.allGoodsType .allTypeM>li>.allTypeB>li>.allTypeS>li>a{
-    display:block;
-    height: 40px;
-    color:#333;
+.allGoodsType .allTypeM>li>.allTypeB>li{
+    float:left;
+
+}
+.allGoodsType .allTypeM>li>.allTypeB>li>a:nth-child(1){
+    display:inline-block;
+    width: 80px;
     line-height:40px;
     font-size:14px;
     font-weight:bold;
+    margin-right:20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align:center;
 
+}
+.allGoodsType .allTypeM>li>.allTypeB>li>a{
+   display:inline-block;
+    width: 60px;
+    line-height:40px;
+    font-size:12px;
+    font-weight:normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .allGoodsType .allTypeM>li:hover .allTypeB{
     display: block;
    
 }
-.allGoodsType .allTypeM li>.allTypeB li .allTypeS{
-    position:absolute;
-    top: 0;
-    padding-top: 2px;
-    left: 80px;
-    width: 600px;
-    text-align:center;
-    background: white;
-    padding-left:10px;
-}
-/*.allGoodsType .allTypeM li>.allTypeB >li>.allTypeS2{
-    position:absolute;
-    padding-top: 2px;
-    top:40px;
-    left: 80px;
-    width: 600px;
-    text-align:center;
-    background: white;
-    padding-left:10px;
-    top: 40px;
-    
-}*/
-.allGoodsType .allTypeM>li>.allTypeB>li>.allTypeS>li{
-    float:left;
-}
-.allGoodsType .allTypeM>li>.allTypeB>li>.allTypeS>li>a{
-    font-size:12px;
-    font-weight:normal;
-    margin:0 15px;
-}
+
 
 .allGoodsType h3 .menu {
    padding-right:5px;

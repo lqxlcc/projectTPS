@@ -83,7 +83,7 @@
 			// 鼠标移入移出
 			$small.on('mouseenter',function(){
 				// 图片宽高
-				img.src = $smallImg.attr('data-big');//得到data-big的属性值
+				img.src = $smallImg.attr('imgbig');//得到data-big的属性值
 				$big.fadeIn();
 				$zoom.fadeIn();
 

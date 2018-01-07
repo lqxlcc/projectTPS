@@ -1,8 +1,8 @@
 .main-content{
-    height:583px;
+    min-height:583px;
 }
 .main-content .container{
-    height:583px;
+    min-height:583px;
 }
 .main-content h3{
     font-weight:bold;
@@ -22,34 +22,33 @@
     color: #e4393c;
 }
 .main-content .myCar{
-    height:278px;
+    min-height:278px;
     margin-top:10px;
     border:1px solid #ddd;
 }
-.main-content .myCar ul{
+.main-content .myCar>ul{
     height:40px;
     border-bottom:1px solid #ddd;
 }
-.main-content .myCar ul li{
+.main-content .myCar>ul>li{
    float:left;
    padding:0 30px;
    line-height:36px;
    font-size:14px;
 }
-.main-content .myCar ul li:nth-child(2){
+.main-content .myCar>ul>li:nth-child(2){
     padding-right:200px;
 }
-.main-content .myCar ul li:nth-child(3),.main-content .myCar ul li:nth-child(6){
+.main-content .myCar>ul>li:nth-child(3),.main-content .myCar ul li:nth-child(6){
     padding-right:100px;
 }
-.main-content .myCar ul li:nth-child(4),.main-content .myCar ul li:nth-child(5){
+.main-content .myCar>ul>li:nth-child(4),.main-content .myCar ul li:nth-child(5){
     padding-right:145px;
 }
-.main-content .myCar ul li:last-child{
+.main-content .myCar>ul>li:last-child{
    float:right;
 }
 .main-content .myCar .checkAll{
-    padding-left:30px;
     padding-top:10px;
     line-height:40px;
    border-bottom:1px dashed #ddd;
@@ -57,6 +56,48 @@
 }
 .main-content .myCar .checkAll span{
     padding-left:30px;
+}
+
+.main-content .myCar .checkAll .buyList ul{
+    min-height: 138px;
+   
+}
+.main-content .myCar .checkAll .buyList ul li{
+   vertical-align:bottom;
+   position:relative;
+   border-bottom:1px dashed #ccc;
+    padding-left:30px;
+    padding-bottom:10px;
+
+}
+.main-content .myCar .checkAll .buyList ul li img{
+    display:inline-block;
+   width: 100px;
+   height: 100px;
+}
+.main-content .myCar .checkAll .buyList ul li h4{
+    display:inline-block;
+   font-size:12px;
+   width: 165px;
+   line-height:20px;
+}
+.main-content .myCar .checkAll .buyList ul li p{
+   position:absolute;
+   top:0;
+   left:530px;
+   font-weight:bold;
+}
+.main-content .myCar .checkAll .buyList ul li p i{
+   position:absolute;
+   top:0;
+   left:260px;
+   font-weight:bold;
+}
+.main-content .myCar .checkAll .buyList ul li .btn-close{
+   position:absolute;
+   top:0;
+   right:35px;
+   font-weight:bold;
 }
 .main-content .myCar .clear{
     padding: 10px;
