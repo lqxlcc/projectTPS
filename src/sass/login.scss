@@ -41,18 +41,19 @@
 .main-content .login ul li a{
     color:blue;
 }
-.main-content .loginTab ul li .agreen{
+.main-content .loginTab ul li .agreenLogin{
     display: block;
     width: 314px;
     height: 45px;
     border: 0;
     border-radius: 6px;
-    background: #ed4242;
+    /*background: #ed4242;*/
     color: #fff;
     text-align: center;
     font-size: 18px;
     line-height: 45px;
     cursor: pointer;
+    background-color: #ccc;
 }
 .main-content .loginTab ul li:last-child{
     padding-top:10px;
@@ -72,7 +73,14 @@
     vertical-align:bottom;
     border-radius: 6px;
     margin-bottom:10px;
+    line-height:40px;
+    text-align:center;
 }
 .main-content .loginTab ul li .verifiRandom{
     height: 38px;
+}
+.userin{
+    display:block;
+    padding-top:40px;
+    color:#ed4242;
 }

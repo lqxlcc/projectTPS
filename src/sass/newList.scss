@@ -1,6 +1,4 @@
-.main-content{
-    height: 2000px;
-}
+
 .main-content .top{
     height: 53px;
     margin:10px 50px 50px 0;
@@ -27,7 +25,7 @@
     border-bottom: 1px solid #ddd;
         padding-bottom: 10px;
 }
-.main-content .goodsList{padding-top:15px;height: 1000px;}
+.main-content .goodsList{padding-top:15px;height: 1270px;}
 .main-content .goodsList ul li{float:left;width: 296px;height: 302px;border:1px solid #ccc;position: relative;
     background: #fff;
     border: solid 1px #eee;
@@ -47,5 +45,9 @@
 .main-content .goodsList ul li .map{display:block;    height: 11px;
     width: 16px;
     border: 1px solid #ddd;}
+    .main-content .pages{
+        text-align:right;
+        margin-bottom:20px;
+    }
 .main-content .pages span{display:inline-block;margin:5px;width:40px;line-height:1.8;text-align: center;background-color:#dfdfdf;color:#666;}
 .main-content .pages span.active{background-color:#fc0;color:#fff;}

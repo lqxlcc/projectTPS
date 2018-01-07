@@ -9,6 +9,21 @@
     margin-top:50px;
     padding:31px 35px;
 }
+.main-content .registerTab .show{
+    display:none;
+    width: 300px;
+    height: 200px;
+    background: white;
+    position:absolute;
+    top:600px;
+    right:50%;
+    z-index:10;
+    text-align:center;
+    line-height:200px;
+}
+.main-content .registerTab .show a{
+    color:#ed4242;
+}
 .main-content .registerTab ul li h3{
     margin-right:30px;
     margin-bottom:10px;
@@ -56,12 +71,14 @@
     height: 45px;
     border: 0;
     border-radius: 6px;
-    background: #ed4242;
+    background:#ccc;
+    /*background: #ed4242;*/
     color: #fff;
     text-align: center;
     font-size: 18px;
     line-height: 45px;
     cursor: pointer;
+
 }
 .main-content .registerTab ul li:last-child{
     padding-top:10px;

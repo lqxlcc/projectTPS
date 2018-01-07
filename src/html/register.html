@@ -6,24 +6,8 @@
      <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/register.css">
-    <script src="../lib/jquery-3.2.1.min.js"></script>
-    <script> 
-        $(function(){
-            $('.main-header').load('header.html',function(){
-                $('.logo').attr('src','../img/logo.png');
-                $('.logo2').attr('src','../img/logo2.png');
-                $('.btnSearch img').attr('src','../img/search.png');
-                $('.header-car img').attr('src','../img/buycar.png');
-                $('.menu img').attr('src','../img/menu.png');
-                $('.menu img').attr('src','../img/menu.png');
-                $('.home').attr('href','../index.html');
-            });
-            $('.main-footer').load('footer.html',function(){
-                $('.li2 img').attr('src','../img/geo.png');
-                $('.footerR img').attr('src','../img/weixin.jpg');
-            });
-        });
-    </script>
+    <!-- <script src="../lib/jquery-3.2.1.min.js"></script> -->
+   
 </head>
 <body>
     <div class="register">
@@ -49,20 +33,25 @@
                             <span class="conPasswdCon alert"></span>
                         </li>
                         <li class="checkA" >
-                            <input type="checkbox" />我同意<a href="">《TPS用户注册协议》</a>
+                            <input type="checkbox" class="checkm" />我同意<a href="">《TPS用户注册协议》</a>
                         </li>
                         <li>
-                            <button class="agreen">同意协议并注册</button>
+                            <a href="" class="toLogin"></a><button class="agreen" disabled="disabled">同意协议并注册</button>
+                            
                         </li>
                         <li>
-                            已有账户？ <a href="">去登录</a>
+                            已有账户？ <a href="login.html">去登录</a>
                         </li>
                     </ul>
+                    <div class="show">
+                        注册成功<a href="login.html">请登录</a>
+                    </div>
                 </div>
+
             </div>
         </div>
         <div class="main-footer"></div>
     </div>
-    <script src="../js/register.js"></script>
 </body>
+<script src="../js/require.js" data-main="../js/register"></script>
 </html>

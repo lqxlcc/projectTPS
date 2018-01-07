@@ -1,4 +1,6 @@
-
+function randomNumber(min,max){
+    return parseInt(Math.random()*(max-min+1)) + min;//0:得到一个最小数min,1:得到一个最大值max
+}
 
 /*
 	cookie操作

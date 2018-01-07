@@ -5,10 +5,14 @@ require.config({
     // 别名/虚拟路径
     paths:{
         'jquery':'../lib/jquery-3.2.1',
-        'gdszoom':'../lib/jquery-gdsZoom/jquery.gdsZoom'
+        'gdszoom':'../lib/jquery-gdsZoom/jquery.gdsZoom',
+        "goodsDetail":"goodsDetail",
+        "buyCar":"buyCar.js"
     },
     shim:{
         // 设置依赖
-        gdszoom:['jquery']
+        gdszoom:['jquery'],
+        buyCar:['goodsDetail']
+
     }
 });

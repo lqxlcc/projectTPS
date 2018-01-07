@@ -7,10 +7,13 @@
                 $('.appDownload img').attr('src','img/phone.png');
                 $('.header-bar .down img').attr('src','img/cn.jpg');
                 $('.c-o').attr('href','html/register.html');
+                $('.login').attr('href','html/login.html');
                 $('.header-car .down').attr('href','html/buyCar.html');
                 $('.newList').attr('href','html/newList.html');
         });
         $('.main-footer').load('html/footer.html');
+         $('.user').html($('.email').val());
+         console.log($('.email').val())
         /*
         1）设置ul宽度，达到水平排列的效果
         2）水平轮播效果

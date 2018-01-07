@@ -6,23 +6,7 @@
      <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/login.css">
-    <script src="../lib/jquery-3.2.1.min.js"></script>
-    <script> 
-        $(function(){
-            $('.main-header').load('header.html',function(){
-                $('.logo').attr('src','../img/logo.png');
-                $('.logo2').attr('src','../img/logo2.png');
-                $('.btnSearch img').attr('src','../img/search.png');
-                $('.header-car img').attr('src','../img/buycar.png');
-                $('.menu img').attr('src','../img/menu.png');
-                $('.menu img').attr('src','../img/menu.png');
-                $('.home').attr('href','../index.html');
-            });
-            $('.main-footer').load('footer.html',function(){
-                $('.li2 img').attr('src','../img/geo.png');
-                $('.footerR img').attr('src','../img/weixin.jpg');
-            });
-        });
+    
     </script>
 </head>
 <body>
@@ -35,11 +19,9 @@
                         <li>
                             <h3 class="accountLogin">账号登录</h3>
                         </li>
-                        <li>
+                        <li class="blur">
                             <input type="text" placeholder="邮箱/ID/手机号" class="email"/>
                             <span class="emailCon alert"></span>
-                        </li>
-                        <li>
                             <input type="password" placeholder="请输入密码" class="passwd"/>
                             <span class="passwdCon alert"></span>
                         </li>
@@ -48,18 +30,20 @@
                             <span class="verifiRandom"></span>
                         </li>
                         <li>
-                            <button class="agreen">登录</button>
+                            <button class="agreenLogin" disabled="disabled">登录</button>
                         </li>
                         
                         <li>
-                            <p class="fl">不是会员？ <a href="">马上注册</a></p><p class="fr"><a href="">忘记密码？</a></p>
+                            <p class="fl">不是会员？ <a href="register.html">马上注册</a></p><p class="fr"><a href="">忘记密码？</a></p>
                         </li>
+
                     </ul>
+                    <span class="userin"></span>
                 </div>
             </div>
         </div>
         <div class="main-footer"></div>
     </div>
-    <script src="../js/register.js"></script>
+    <script src="../js/require.js" data-main="../js/login"></script>
 </body>
 </html>
